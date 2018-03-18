@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next gemini" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="web前端开发,前面面试题," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小石头官网" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="2.CSS3基础 2.1.link和＠import都可以为页面引入CSS文件，其区别是？ 将样式定义在单独的·css的文件里，link和＠import都可以在html页面弓l入css文件。有link和＠import两种方式，导入方式如下： link方式： &amp;lt;link rel=”stylesheet”type=”text/css“ href=”aa.css“&amp;gt; @import方式： &amp;l">
+<meta name="keywords" content="web前端开发,前面面试题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端面试题（css）">
+<meta property="og:url" content="http://esplori.github.io/html/79.html">
+<meta property="og:site_name" content="小石头官网">
+<meta property="og:description" content="2.CSS3基础 2.1.link和＠import都可以为页面引入CSS文件，其区别是？ 将样式定义在单独的·css的文件里，link和＠import都可以在html页面弓l入css文件。有link和＠import两种方式，导入方式如下： link方式： &amp;lt;link rel=”stylesheet”type=”text/css“ href=”aa.css“&amp;gt; @import方式： &amp;l">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://7xr7kr.com1.z0.glb.clouddn.com/css-box.png">
+<meta property="og:updated_time" content="2017-10-09T14:38:17.341Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端面试题（css）">
+<meta name="twitter:description" content="2.CSS3基础 2.1.link和＠import都可以为页面引入CSS文件，其区别是？ 将样式定义在单独的·css的文件里，link和＠import都可以在html页面弓l入css文件。有link和＠import两种方式，导入方式如下： link方式： &amp;lt;link rel=”stylesheet”type=”text/css“ href=”aa.css“&amp;gt; @import方式： &amp;l">
+<meta name="twitter:image" content="http://7xr7kr.com1.z0.glb.clouddn.com/css-box.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://esplori.github.io/html/79.html"/>
+
+
+
+
+
+  <title>前端面试题（css） | 小石头官网</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?261caeb64c38e6398883c26be50e67eb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小石头官网</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江湖中的一颗小石头</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://esplori.github.io/html/79.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vscoding">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oxi9a7h8i.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小石头官网">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">前端面试题（css）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-04T05:39:13+08:00">
+                2016-10-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web前端/未分类/" itemprop="url" rel="index">
+                    <span itemprop="name">未分类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><span style="font-family: Calibri;">2.CSS3</span><span style="font-family: SimSun;">基础</span></p>
+<p><span style="font-family: Calibri;">2.1.link</span><span style="font-family: SimSun;">和＠</span><span style="font-family: Calibri;">import</span><span style="font-family: SimSun;">都可以为页面引入</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">文件，其区别是？</span></p>
+<p><span style="font-family: SimSun;">将样式定义在单独的</span><span style="font-family: Calibri;">·css</span><span style="font-family: SimSun;">的文件里，</span><span style="font-family: Calibri;">link</span><span style="font-family: SimSun;">和＠</span><span style="font-family: Calibri;">import</span><span style="font-family: SimSun;">都可以在</span><span style="font-family: Calibri;">html</span><span style="font-family: SimSun;">页面弓</span><span style="font-family: Calibri;">l</span><span style="font-family: SimSun;">入</span><span style="font-family: Calibri;">css</span><span style="font-family: SimSun;">文</span><span style="font-family: SimSun;">件。有</span><span style="font-family: Calibri;">link</span><span style="font-family: SimSun;">和＠</span><span style="font-family: Calibri;">import</span><span style="font-family: SimSun;">两种方式，导入</span><span style="font-family: 'Microsoft YaHei';">方式如下：</span></p>
+<p><span lang="x-none" style="font-family: Calibri;">l</span><span lang="zh-CN" style="font-family: Calibri;">ink</span><span lang="zh-CN" style="font-family: SimSun;">方</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">式</span><span lang="zh-CN" style="font-family: SimSun;">：</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">&lt;</span><span lang="en-US" style="font-family: Calibri;">link</span><span lang="x-none" style="font-family: Calibri;"> rel</span><span lang="zh-CN" style="font-family: Calibri;">=”</span><span lang="x-none" style="font-family: Calibri;">stylesheet</span><span lang="zh-CN" style="font-family: SimSun;">”</span><span lang="x-none" style="font-family: SimSun;">type</span><span lang="zh-CN" style="font-family: Calibri;">=”</span><span lang="x-none" style="font-family: SimSun;">text/css</span><span lang="zh-CN" style="font-family: Calibri;">“</span> <span lang="zh-CN" style="font-family: Calibri;">href=”aa.c</span><span lang="x-none" style="font-family: Calibri;">ss</span><span lang="zh-CN" style="font-family: Calibri;">“&gt;</span></p>
+<p><span style="font-family: Calibri;">@import</span><span style="font-family: SimSun;">方式：</span></p>
+<p><span lang="x-none" style="font-family: SimSun;">&lt;style type</span><span lang="zh-CN" style="font-family: Calibri;">=</span><span lang="x-none" style="font-family: Calibri;">“</span><span lang="zh-CN" style="font-family: Calibri;">text/c</span><span lang="x-none" style="font-family: Calibri;">ss</span><span lang="zh-CN" style="font-family: Calibri;">“&gt;</span></p>
+<p>@import ‘aa.css’</p>
+<p><span lang="zh-CN">&lt;/</span><span lang="x-none">s</span><span lang="zh-CN">tyle&gt;</span></p>
+<p><span style="font-family: Calibri;">Iink</span><span style="font-family: SimSun;">和＠</span><span style="font-family: Calibri;">import</span><span style="font-family: SimSun;">两种导入</span><span style="font-family: Calibri;">css</span><span style="font-family: SimSun;">文件的区别：</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">1</span><span lang="zh-CN" style="font-family: SimSun;">）祖先的差别。</span><span lang="zh-CN" style="font-family: Calibri;">link</span><span lang="zh-CN" style="font-family: SimSun;">属于</span><span lang="zh-CN" style="font-family: Calibri;">XH</span><span lang="x-none" style="font-family: SimSun;">T</span><span lang="zh-CN" style="font-family: Calibri;">ML</span><span lang="zh-CN" style="font-family: SimSun;">标签，而＠</span><span lang="zh-CN" style="font-family: Calibri;">import</span><span lang="zh-CN" style="font-family: SimSun;">完全是</span><span lang="zh-CN" style="font-family: Calibri;">Css</span><span lang="zh-CN" style="font-family: SimSun;">提供的一种方式,</span><span style="font-family: Calibri;">link</span><span style="font-family: SimSun;">标签除了可</span><span style="font-family: 'Microsoft YaHei';">加载</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">外，还可以做很多其它的事情，</span><span style="font-family: 'Microsoft YaHei';">比如</span><span style="font-family: SimSun;">定义</span><span style="font-family: Calibri;">RSS</span><span style="font-family: SimSun;">，定义</span><span style="font-family: Calibri;">rel</span><span style="font-family: SimSun;">连接属</span><span style="font-family: SimSun;">性等,</span><span style="font-family: Calibri;">@import</span><span style="font-family: SimSun;">就只</span><span style="font-family: 'Microsoft YaHei';">能加载</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">了；</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">2</span><span lang="zh-CN" style="font-family: SimSun;">）加载</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">顺序的</span><span lang="zh-CN" style="font-family: SimSun;">差别。当一个页面</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">被加</span><span lang="zh-CN" style="font-family: SimSun;">载的时候（就是被浏览者浏览的时候）</span><span lang="zh-CN" style="font-family: Calibri;">,”l</span><span lang="x-none" style="font-family: Calibri;">i</span><span lang="zh-CN" style="font-family: Calibri;">nk</span><span lang="zh-CN" style="font-family: SimSun;">引</span><span style="font-family: SimSun;">用的</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">会同时</span><span style="font-family: 'Microsoft YaHei';">被加</span><span style="font-family: SimSun;">载，而＠</span><span style="font-family: Calibri;">import</span><span style="font-family: SimSun;">引用的</span><span style="font-family: Calibri;">CsS</span><span style="font-family: SimSun;">会等到页面全部被下载</span><span style="font-family: 'Microsoft YaHei';">完再加载</span><span style="font-family: SimSun;">．所</span><span style="font-family: SimSun;">以有时候浏览＠</span><span style="font-family: Calibri;">import</span><span style="font-family: SimSun;">加载</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">的</span><span style="font-family: 'Microsoft YaHei';">页</span><span style="font-family: SimSun;">面时</span><span style="font-family: 'Microsoft YaHei';">会没有</span><span style="font-family: SimSun;">样式（就是</span><span style="font-family: 'Microsoft YaHei';">闪烁</span><span style="font-family: SimSun;">），网速慢时更为明</span>显；</p>
+<p><span style="font-family: Calibri;">3</span><span style="font-family: SimSun;">）兼容性的差别．由于＠</span><span style="font-family: Calibri;">import</span><span style="font-family: SimSun;">是</span><span style="font-family: Calibri;">Css2.1</span><span style="font-family: SimSun;">提出的所以老的浏览器不支持，</span><span style="font-family: Calibri;">@import</span><span lang="zh-CN" style="font-family: SimSun;">只有在</span><span lang="zh-CN" style="font-family: Calibri;">IE</span><span lang="en-US" style="font-family: Calibri;">5</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">以上的才能识别</span><span lang="zh-CN" style="font-family: SimSun;">，而</span><span lang="zh-CN" style="font-family: Calibri;">Iink</span><span lang="zh-CN" style="font-family: SimSun;">标签无此问题：</span></p>
+<p><span style="font-family: Calibri;">4</span><span style="font-family: SimSun;">）使用</span><span style="font-family: Calibri;">DOM</span><span style="font-family: SimSun;">控制样式时的</span><span style="font-family: 'Microsoft YaHei';">差别</span><span style="font-family: SimSun;">．当使用</span><span style="font-family: Calibri;">Javascript</span><span style="font-family: SimSun;">控制</span><span style="font-family: Calibri;">DOM</span><span style="font-family: SimSun;">去改变样式的时候，</span><span style="font-family: 'Microsoft YaHei';">只能使用</span><span style="font-family: Calibri;">link</span><span style="font-family: SimSun;">标签，因为＠</span><span style="font-family: Calibri;">import</span><span style="font-family: SimSun;">不是</span><span style="font-family: Calibri;">DOM</span><span style="font-family: SimSun;">可以控制的；</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">5)@import</span><span lang="zh-CN" style="font-family: SimSun;">可以在</span><span lang="en-US" style="font-family: Calibri;">css</span><span lang="zh-CN" style="font-family: SimSun;">中再次引入其它样式表，</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">比如</span><span lang="zh-CN" style="font-family: SimSun;">可以创建一个</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">主</span><span lang="zh-CN" style="font-family: SimSun;">样式表，在主</span>样式表中再引入其他的样式表。</p>
+<p><span style="font-family: Calibri;">2.2</span><span style="font-family: SimSun;">．如何</span><span style="font-family: 'Microsoft YaHei';">理解</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">样式表的层叠性？</span></p>
+<p><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">使用层叠（</span><span style="font-family: Calibri;">Cascade</span><span style="font-family: SimSun;">）的原则来考虑继承、层叠次序和优先级等重要待征，从而判</span><span style="font-family: SimSun;">断相互</span><span style="font-family: 'Microsoft YaHei';">冲突的规则中哪个规则应该起作用</span><span style="font-family: SimSun;">。</span></p>
+<p><span style="font-family: SimSun;">继承</span><span style="font-family: 'Microsoft YaHei';">性是</span><span style="font-family: SimSun;">指，许多</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">的</span><span style="font-family: 'Microsoft YaHei';">样式规则</span><span style="font-family: SimSun;">不但影响选择器所定义的元素，而且会被该些元素</span>的后代继承。</p>
+<p><span style="font-family: SimSun;">层叠</span><span style="font-family: 'Microsoft YaHei';">性是指</span><span style="font-family: SimSun;">，当一个</span><span style="font-family: Calibri;">Web</span><span style="font-family: SimSun;">页面使用多个样式表，多个样式表中的样式可层叠为一个．</span><span style="font-family: SimSun;">在多</span><span style="font-family: 'Microsoft YaHei';">个样式表</span><span style="font-family: SimSun;">之间</span><span style="font-family: 'Microsoft YaHei';">所定义的样式没有冲突的时候，</span><span style="font-family: SimSun;">浏览器会显示所有的样式．</span><span style="font-family: SimSun;">优</span><span style="font-family: 'Microsoft YaHei';">先级是指</span><span style="font-family: SimSun;">，当发生样式定义冲突时，浏览器首先会按照</span><span style="font-family: 'Microsoft YaHei';">不同样式规则的优先级来应用</span></p>
+<p><span style="font-family: SimSun;">样式。</span><span style="font-family: Calibri;">CSS</span><span style="font-family: 'Microsoft YaHei';">样式的优先级如下</span><span style="font-family: SimSun;">所示（其中数字</span><span style="font-family: Calibri;">3</span><span style="font-family: SimSun;">拥有最高的优先权）</span><span style="font-family: Calibri;">:</span></p>
+<p><span style="font-family: Calibri;">1</span><span style="font-family: SimSun;">．浏览器缺省设置；</span></p>
+<p><span style="font-family: Calibri;">2</span><span style="font-family: SimSun;">．外部样式表（</span><span style="font-family: Calibri;">.css</span><span style="font-family: SimSun;">文件）或者内部样式表（位于＜</span><span style="font-family: Calibri;">head</span><span style="font-family: SimSun;">＞元素内部）</span><span style="font-family: Calibri;">;</span></p>
+<p><span style="font-family: Calibri;">3</span><span style="font-family: SimSun;">．内联样式（作为某个元素的</span><span style="font-family: Calibri;">style</span><span style="font-family: SimSun;">属</span><span style="font-family: 'Microsoft YaHei';">性的值）。</span><span style="font-family: SimSun;">同等优先级下，以最后定义的样式为准，</span><span style="font-family: Calibri;">important</span><span style="font-family: SimSun;">比内联高．</span></p>
+<p><span style="font-family: Calibri;">2.3</span><span style="font-family: SimSun;">．哪些属性可以继承？</span></p>
+<p><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">中可以继承的属性如下：</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">1</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">）文</span><span lang="zh-CN" style="font-family: SimSun;">本相关属性：</span><span lang="en-US" style="font-family: Calibri;">fo</span><span lang="zh-CN" style="font-family: Calibri;">nt-family</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">fon</span><span lang="x-none" style="font-family: Calibri;">t-</span><span lang="zh-CN" style="font-family: Calibri;">size</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">font-style</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">font-variant,font-weight</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">font</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="x-none" style="font-family: Calibri;">letter-spacing</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">line</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">height</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">t</span><span lang="x-none" style="font-family: Calibri;">ext-a</span><span lang="zh-CN" style="font-family: Calibri;">Iign</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">te</span><span lang="x-none" style="font-family: Calibri;">xt-i</span><span lang="zh-CN" style="font-family: Calibri;">ndent</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="x-none" style="font-family: Calibri;">text-transform</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span style="font-family: Calibri;">word</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">spacing</span><span style="font-family: SimSun;">、</span><span style="font-family: Calibri;">color;</span></p>
+<p><span style="font-family: Calibri;">2</span><span style="font-family: 'Microsoft YaHei';">列表</span><span style="font-family: SimSun;">相关属性：</span><span style="font-family: Calibri;">1ist-style</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">image</span><span style="font-family: SimSun;">、</span><span style="font-family: Calibri;">IISt-style</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">position</span><span style="font-family: SimSun;">、</span><span style="font-family: Calibri;">list-style</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">type</span><span style="font-family: SimSun;">、</span><span style="font-family: Calibri;">list-Style:</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">3</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">表格</span><span lang="zh-CN" style="font-family: SimSun;">相关属性：</span><span lang="zh-CN" style="font-family: Calibri;">borde</span><span lang="x-none" style="font-family: Calibri;">r</span><span lang="x-none" style="font-family: SimSun;">-</span><span lang="zh-CN" style="font-family: Calibri;">collapse</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">border-specing</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">caption</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">side</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">table</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">Iayoute;</span></p>
+<p><span style="font-family: Calibri;">4</span><span style="font-family: SimSun;">）其他属性：</span><span style="font-family: Calibri;">Cursor</span><span style="font-family: SimSun;">、</span><span style="font-family: Calibri;">visibility.</span></p>
+<p><span style="font-family: Calibri;">2.4.CSS</span><span style="font-family: SimSun;">选择器中，元素选择器和类选择器的区别是什么？</span></p>
+<p><span style="font-family: SimSun;">元素选择器是最常见的</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">选择器，即，文档的元素就是最基本的选择器。选择器通</span><span lang="zh-CN" style="font-family: SimSun;">常是某个</span><span lang="x-none" style="font-family: SimSun;">HT</span><span lang="zh-CN" style="font-family: Calibri;">ML</span><span lang="zh-CN" style="font-family: SimSun;">元素，比如＜</span><span lang="zh-CN" style="font-family: Calibri;">p</span><span lang="x-none" style="font-family: SimSun;">&gt;</span><span lang="zh-CN" style="font-family: SimSun;">、＜</span><span lang="zh-CN" style="font-family: Calibri;">h</span><span lang="x-none" style="font-family: Calibri;">1</span><span lang="zh-CN" style="font-family: SimSun;">＞、＜</span><span lang="zh-CN" style="font-family: Calibri;">em</span><span lang="zh-CN" style="font-family: SimSun;">＞、＜</span><span lang="zh-CN" style="font-family: Calibri;">a</span><span lang="zh-CN" style="font-family: SimSun;">＞等，甚至可以是</span><span lang="x-none" style="font-family: SimSun;">&lt;HTML&gt;</span><span lang="zh-CN" style="font-family: SimSun;">元素</span>本身。</p>
+<p><span style="font-family: SimSun;">类选择器用于将样式</span><span style="font-family: 'Microsoft YaHei';">与</span><span style="font-family: SimSun;">与附带</span><span style="font-family: Calibri;">dass</span><span style="font-family: SimSun;">属性的元素匹配，其中该</span><span style="font-family: Calibri;">class</span><span style="font-family: SimSun;">属性的值为类选</span><span style="font-family: SimSun;">择器</span><span style="font-family: 'Microsoft YaHei';">中指定的</span><span style="font-family: SimSun;">值。使用类选择</span><span style="font-family: 'Microsoft YaHei';">器时</span><span style="font-family: SimSun;">，首先需要定义样式类，其语法为：</span>.className{}</p>
+<p><span style="font-family: SimSun;">所有能够附带</span><span style="font-family: Calibri;">dass</span><span style="font-family: SimSun;">属性的元素都</span><span style="font-family: 'Microsoft YaHei';">可</span><span style="font-family: SimSun;">以使用</span><span style="font-family: 'Microsoft YaHei';">此样式</span><span style="font-family: SimSun;">声明．只需要将</span><span style="font-family: Calibri;">dass</span><span style="font-family: SimSun;">属性的值设置</span><span style="font-family: SimSun;">为“</span><span style="font-family: Calibri;">className”</span><span style="font-family: SimSun;">，则可以将类选择器的样式与元素关联．</span></p>
+<p>在实际使用时，如果需要为某种元素定义样式，则往往使用元素选择器；如果要应用样<span style="font-family: SimSun;">式而不考虑具体设计的元素．最常用的方法就是</span><span style="font-family: 'Microsoft YaHei';">使</span><span style="font-family: SimSun;">用类选择器。</span></p>
+<p><span style="font-family: Calibri;">2.5</span><span style="font-family: SimSun;">．简要描述</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">中的定位</span><span style="font-family: 'Microsoft YaHei';">机制</span></p>
+<p><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">中，除了默认的</span><span style="font-family: 'Microsoft YaHei';">流定位方式以外</span><span style="font-family: SimSun;">，还</span><span style="font-family: 'Microsoft YaHei';">有如下几种</span><span style="font-family: SimSun;">定位机制：浮动</span><span style="font-family: 'Microsoft YaHei';">定</span><span style="font-family: SimSun;">位、相对定位、</span><span style="font-family: SimSun;">绝</span><span style="font-family: 'Microsoft YaHei';">对</span><span style="font-family: SimSun;">定位和固定定位。</span></p>
+<p><span style="font-family: SimSun;">浮动</span><span style="font-family: 'Microsoft YaHei';">定位是指</span><span style="font-family: SimSun;">将元素</span><span style="font-family: 'Microsoft YaHei';">排除在普通流之外</span><span style="font-family: SimSun;">，并且将它放置在包合框的左边或者右边，但是</span>依旧位于包含框之内。相对定位将元素相对于它在普通流中的位置进行定位。</p>
+<p>绝对定位是指将元素的内容从普通流中完全移除，并且可以使用偏移属性来固定该元素的位置。</p>
+<p><span style="font-family: Calibri;">2.6.display</span><span style="font-family: SimSun;">属性和</span><span style="font-family: Calibri;">visibility</span><span style="font-family: SimSun;">属性的区别？</span></p>
+<p><span style="font-family: SimSun;">可以使用</span><span style="font-family: Calibri;">display</span><span style="font-family: SimSun;">属性定义建立布局时元素生成的显示框类型．</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">1</span><span lang="zh-CN" style="font-family: SimSun;">．如果将</span><span lang="zh-CN" style="font-family: Calibri;">dis</span><span lang="x-none" style="font-family: Calibri;">pl</span><span lang="zh-CN" style="font-family: Calibri;">ay</span><span lang="zh-CN" style="font-family: SimSun;">属性设置为</span><span lang="zh-CN" style="font-family: Calibri;">block</span><span lang="zh-CN" style="font-family: SimSun;">，可以让行内元素（比如＜</span><span lang="zh-CN" style="font-family: Calibri;">a</span><span lang="x-none" style="font-family: SimSun;">&gt;</span><span lang="zh-CN" style="font-family: SimSun;">元素）表现得像</span>块级元素一样；</p>
+<p><span style="font-family: Calibri;">2</span><span style="font-family: SimSun;">．如果将</span><span style="font-family: Calibri;">display</span><span style="font-family: SimSun;">属性设置为</span><span style="font-family: Calibri;">inline</span><span style="font-family: SimSun;">，可以让块级元素（</span><span style="font-family: 'Microsoft YaHei';">比如</span><span style="font-family: Calibri;">&lt;p</span><span style="font-family: SimSun;">＞元素）表现得像</span>内联元素一样；</p>
+<p><span style="font-family: Calibri;">3</span><span style="font-family: SimSun;">．可以通过把</span><span style="font-family: Calibri;">disPlay</span><span style="font-family: SimSun;">属性设置为</span><span style="font-family: Calibri;">none</span><span style="font-family: SimSun;">，</span><span style="font-family: 'Microsoft YaHei';">让生成</span><span style="font-family: SimSun;">的元素根本没有框．这样的话，该</span><span style="font-family: SimSun;">框及其所有内容就不再显示，不占用文档中</span><span style="font-family: 'Microsoft YaHei';">的空间。</span></p>
+<p><span style="font-family: SimSun;">在</span><span style="font-family: Calibri;">DIV</span><span style="font-family: SimSun;">设计中，使用</span><span style="font-family: Calibri;">display:none</span><span style="font-family: SimSun;">属性后，</span><span style="font-family: Calibri;">HTML</span><span style="font-family: SimSun;">元素（对象）的宽度、高度等各种</span><span style="font-family: SimSun;">属性</span><span style="font-family: 'Microsoft YaHei';">都将</span><span style="font-family: SimSun;">“丢失”；而使用</span><span style="font-family: Calibri;">visibility:hidden</span><span style="font-family: SimSun;">属性后．</span><span style="font-family: Calibri;">HTML</span><span style="font-family: SimSun;">元素（对象）仅仅是在视觉</span>上看不见（完全透明），而它所占据的空间位置仍然存在，也即是说它仍具有高度、宽度等属性值．</p>
+<p><span style="font-family: Calibri;">2.7</span><span style="font-family: SimSun;">．简述对</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">的盒子</span><span style="font-family: 'Microsoft YaHei';">模型理解</span><span style="font-family: SimSun;">？</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">C</span><span lang="en-US" style="font-family: Calibri;">SS</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">盒子模型也叫做框模型，具备内容（</span><span lang="x-none" style="font-family: Calibri;">content</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">），填充（</span><span lang="en-US" style="font-family: Calibri;">pa</span><span lang="x-none" style="font-family: Calibri;">dding</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">）</span><span lang="x-none" style="font-family: Calibri;">,</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">边框（</span><span lang="en-US" style="font-family: Calibri;">bord</span><span lang="x-none" style="font-family: Calibri;">er</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">）</span><span lang="x-none" style="font-family: Calibri;">,</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">边界（</span><span lang="x-none" style="font-family: Calibri;">margin</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">）这些属性。在</span><span lang="x-none" style="font-family: Calibri;">css</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">中，每一个元素都被视为一个框，而每个框都有三个属性。</span></p>
+<p><span style="font-family: Calibri;">border</span><span style="font-family: SimSun;">：元素的边框（可能不可见）</span><span style="font-family: Calibri;">,</span><span style="font-family: 'Microsoft YaHei';">用于将框的边缘与其他框分开。</span></p>
+<p><span style="font-family: Calibri;">margin</span><span style="font-family: SimSun;">：外边距，表示框的边缘与</span><span style="font-family: 'Microsoft YaHei';">相邻框之间的</span><span style="font-family: SimSun;">距离，也称为页边空白；</span></p>
+<p><span style="font-family: Calibri;">padding</span><span style="font-family: SimSun;">：内边距，表示框内容和边框之间的</span><span style="font-family: 'Microsoft YaHei';">空间</span><span style="font-family: SimSun;">．</span></p>
+<p>盒子模型的结柱妆口下图所示：</p>
+<p> <img src="http://7xr7kr.com1.z0.glb.clouddn.com/css-box.png" alt=""></p>
+<p><span style="font-family: 'Microsoft YaHei';">由</span><span style="font-family: SimSun;">上图可以看</span><span style="font-family: 'Microsoft YaHei';">出，</span><span style="font-family: Calibri;">width</span><span style="font-family: SimSun;">和</span><span style="font-family: Calibri;">height</span><span style="font-family: SimSun;">指的是内容区域的宽度和高度。增加内边距、边</span></p>
+<p><span style="font-family: SimSun;">容区域的尺寸，但是会</span><span style="font-family: 'Microsoft YaHei';">增加元素框的总尺寸</span><span style="font-family: SimSun;">。</span></p>
+<p><span style="font-family: SimSun;">因此，如果在一个具有边框的元素中放置文本，往往需要设置</span><span style="font-family: 'Microsoft YaHei';">一此内边距</span><span style="font-family: SimSun;">，</span><span style="font-family: 'Microsoft YaHei';">以便文本的边缘不要接触边框，这样更便于阅读。</span><span style="font-family: SimSun;">而</span><span style="font-family: 'Microsoft YaHei';">外边距</span><span style="font-family: SimSun;">则可以在多个元素框之间创建空白，避免这</span><span style="font-family: 'Microsoft YaHei';">些框都挤在一起。</span><span style="font-family: SimSun;">因此，在设计页面时，经常会使用</span><span style="font-family: Calibri;">padding</span><span style="font-family: SimSun;">属性和</span><span style="font-family: Calibri;">margin</span><span style="font-family: SimSun;">属性来设置页面的布局．但是，必须注意的是，一旦用了</span><span style="font-family: Calibri;">Padding</span><span style="font-family: SimSun;">属性或者</span><span style="font-family: Calibri;">margin</span><span style="font-family: SimSun;">属性设置了元素的边距以后．会增加元素在页面布局中所占的面积．</span></p>
+<p><span style="font-family: Calibri;">2.8</span><span style="font-family: SimSun;">．简述</span><span style="font-family: Calibri;">CSS3</span><span style="font-family: SimSun;">中的伪类选择器</span></p>
+<p><span style="font-family: Calibri;">CSS3</span><span style="font-family: SimSun;">提供了大量</span><span style="font-family: 'Microsoft YaHei';">伪类选择</span><span style="font-family: SimSun;">器，</span><span style="font-family: 'Microsoft YaHei';">浏览器对于有些伪类选择器的支持还不太好。目前，常用的伪类选择器有：</span></p>
+<p><span lang="zh-CN" style="font-family: SimSun;">目标为类：即：</span><span lang="zh-CN" style="font-family: Calibri;">target</span><span lang="zh-CN" style="font-family: SimSun;">，突出显示活动的</span><span lang="zh-CN" style="font-family: Calibri;">H</span><span lang="x-none" style="font-family: SimSun;">T</span><span lang="zh-CN" style="font-family: Calibri;">ML</span><span lang="zh-CN" style="font-family: SimSun;">锚，用于选取当</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">前活动的</span><span lang="zh-CN" style="font-family: SimSun;">目标元羲；</span></p>
+<p><span style="font-family: SimSun;">元素状态伪类：</span><span style="font-family: 'Microsoft YaHei';">比如</span><span style="font-family: SimSun;">：</span><span style="font-family: Calibri;">enabled</span><span style="font-family: SimSun;">、：</span><span style="font-family: Calibri;">disabled</span><span style="font-family: SimSun;">、：</span><span style="font-family: Calibri;">checked;</span></p>
+<p><span lang="zh-CN" style="font-family: SimSun;">结构伪类：</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">比如</span><span lang="zh-CN" style="font-family: SimSun;">：</span><span lang="x-none" style="font-family: SimSun;">first-child</span><span lang="zh-CN" style="font-family: SimSun;">、：</span><span lang="zh-CN" style="font-family: Calibri;">last</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">child</span><span lang="zh-CN" style="font-family: SimSun;">、：</span><span lang="zh-CN" style="font-family: Calibri;">empty</span><span lang="zh-CN" style="font-family: SimSun;">、：</span><span lang="zh-CN" style="font-family: Calibri;">only</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">child;</span></p>
+<p><span lang="zh-CN" style="font-family: SimSun;">否定伪类：即：</span><span lang="zh-CN" style="font-family: Calibri;">not(sele</span><span lang="x-none" style="font-family: Calibri;">ctor)</span><span lang="zh-CN" style="font-family: SimSun;">，匹</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">配</span><span lang="zh-CN" style="font-family: SimSun;">指定元</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">素</span><span lang="x-none" style="font-family: Calibri;">/</span><span lang="zh-CN" style="font-family: SimSun;">选择器的每个元素。</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">2</span><span lang="x-none" style="font-family: Calibri;">.9</span><span lang="zh-CN" style="font-family: SimSun;">为什么建议设置背景图像的同时还设置背景颇色？</span></p>
+<p><span style="font-family: SimSun;">一般建议在使用背景图像的同时提供</span><span style="font-family: Calibri;">background</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">color</span><span style="font-family: SimSun;">属性并且将其设置为和图像</span><span style="font-family: SimSun;">主要</span><span style="font-family: 'Microsoft YaHei';">颜色类似</span><span style="font-family: SimSun;">的颜色．这样，如果</span><span style="font-family: 'Microsoft YaHei';">正在加</span><span style="font-family: SimSun;">载页面，或者因为各种原因无去显示背景图像时．</span>页面可以使用这种颜色作为背景色。</p>
+<p><span style="font-family: Calibri;">2.10</span><span style="font-family: SimSun;">．如何居中</span><span style="font-family: Calibri;">div</span><span style="font-family: SimSun;">？如何居中一个浮动元表？</span></p>
+<p><span lang="zh-CN" style="font-family: SimSun;">给</span><span lang="zh-CN" style="font-family: Calibri;">div</span><span lang="zh-CN" style="font-family: SimSun;">设置一个宽度，</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">然后设置元素的左右外边距为</span><span lang="zh-CN" style="font-family: Calibri;">auto</span><span lang="zh-CN" style="font-family: SimSun;">，</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">比如</span><span lang="zh-CN" style="font-family: SimSun;">，</span><span lang="zh-CN" style="font-family: Calibri;">margin:</span><span lang="en-US" style="font-family: Calibri;">0</span><span lang="zh-CN" style="font-family: Calibri;">px</span> <span lang="zh-CN" style="font-family: Calibri;">auto.</span><span style="font-family: SimSun;">则可以实现</span><span style="font-family: Calibri;">div</span><span style="font-family: SimSun;">居中显示。</span></p>
+<p><span style="font-family: SimSun;">对于浮动元素，</span><span style="font-family: 'Microsoft YaHei';">设置</span><span style="font-family: SimSun;">其左右外</span><span style="font-family: 'Microsoft YaHei';">边距为</span><span style="font-family: SimSun;">关键字</span><span style="font-family: Calibri;">auto</span><span style="font-family: SimSun;">是无效的。此时，如果需要设置其</span>居中显示，可以：</p>
+<p><span style="font-family: Calibri;">1</span><span style="font-family: SimSun;">、精确计算</span><span style="font-family: 'Microsoft YaHei';">其左右外</span><span style="font-family: SimSun;">边距并进行设置，实现居中显示；</span></p>
+<p><span style="font-family: Calibri;">2</span><span style="font-family: SimSun;">、使用一个居中显示的</span><span style="font-family: Calibri;">div</span><span style="font-family: SimSun;">元素包含此浮动元素，</span><span style="font-family: 'Microsoft YaHei';">代码如</span><span style="font-family: SimSun;">：</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">&lt;div</span><span lang="en-US" style="font-family: Calibri;"> s</span><span lang="x-none" style="font-family: Calibri;">tyle=’margin:0px auto’</span><span lang="zh-CN" style="font-family: Calibri;">&gt;&lt;div</span><span lang="x-none" style="font-family: Calibri;"> style=”float:left”</span><span lang="zh-CN" style="font-family: Calibri;">&gt;&lt;/div&gt;&lt;</span><span lang="x-none" style="font-family: SimSun;">/di</span><span lang="zh-CN" style="font-family: Calibri;">v&gt;</span></p>
+<p><span lang="x-none" style="font-family: SimSun;">2.11</span><span lang="zh-CN" style="font-family: SimSun;">在设置文本</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">的字体时</span><span lang="zh-CN" style="font-family: SimSun;">，为什么建议设置替换字体？</span></p>
+<p><span style="font-family: SimSun;">可以使用</span><span style="font-family: Calibri;">font-family</span><span style="font-family: SimSun;">属性来</span><span style="font-family: 'Microsoft YaHei';">指定文</span><span style="font-family: SimSun;">本的字体，代码如下所示：</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">font</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">fa</span><span lang="x-none" style="font-family: Calibri;">mily</span><span lang="zh-CN" style="font-family: Calibri;">:</span><span lang="x-none" style="font-family: Calibri;">name</span><span lang="en-US" style="font-family: Calibri;">/in</span><span lang="x-none" style="font-family: Calibri;">herit</span></p>
+<p><span style="font-family: 'Microsoft YaHei';">此时</span><span style="font-family: SimSun;">，</span><span style="font-family: Calibri;">name</span><span style="font-family: SimSun;">为首选字</span><span style="font-family: 'Microsoft YaHei';">体</span><span style="font-family: SimSun;">名称，如果字体名称有多个单词，即</span><span style="font-family: 'Microsoft YaHei';">中间有</span><span style="font-family: SimSun;">空格，则需要将</span>字体名称用一对单引号或者双引号包围起来．<span style="font-family: SimSun;">但是．如果用户机器上并没有安装</span><span style="font-family: Calibri;">name</span><span style="font-family: SimSun;">所指定的字体，则会显示默认</span><span style="font-family: 'Microsoft YaHei';">字体</span><span style="font-family: SimSun;">，</span><span style="font-family: 'Microsoft YaHei';">因此，如果</span><span style="font-family: SimSun;">可以指定</span><span style="font-family: 'Microsoft YaHei';">一种替代</span><span style="font-family: SimSun;">字体，</span><span style="font-family: 'Microsoft YaHei';">替代字</span><span style="font-family: SimSun;">体可以</span><span style="font-family: 'Microsoft YaHei';">和指定</span><span style="font-family: SimSun;">字体不完全相同，</span><span style="font-family: 'Microsoft YaHei';">相似</span><span style="font-family: SimSun;">目不会影响页面的布局．就可以</span><span style="font-family: 'Microsoft YaHei';">解决问题</span><span style="font-family: SimSun;">了。</span><span style="font-family: 'Microsoft YaHei';">我们</span><span style="font-family: SimSun;">可以为</span><span style="font-family: Calibri;">font</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">family</span><span style="font-family: SimSun;">属性指定多种字体，且多种</span><span style="font-family: 'Microsoft YaHei';">字体之间</span><span style="font-family: SimSun;">用逗号隔开，这样可以为</span><span style="font-family: SimSun;">页面指定一个字体列表。如果用户机器没有第一种字体，</span><span style="font-family: 'Microsoft YaHei';">则浏览器</span><span style="font-family: SimSun;">会查找字体列表中的下一</span><span style="font-family: SimSun;">种字体</span><span style="font-family: 'Microsoft YaHei';">作为替代字体，</span><span style="font-family: SimSun;">如果找遍了字体列表还是没有可以使用的字体，浏览器才会使用</span>默认字体显示页面。代码如下所示：</p>
+<p>H1{font-family:Georgia,serif;}</p>
+<p><span style="font-family: 'Microsoft YaHei';">此时</span><span style="font-family: SimSun;">，</span><span style="font-family: 'Microsoft YaHei';">如果</span><span style="font-family: SimSun;">用户机器上没有安装</span><span style="font-family: Calibri;">Georgia</span><span style="font-family: SimSun;">，但安装了</span><span style="font-family: Calibri;">Times</span><span style="font-family: SimSun;">字体（</span><span style="font-family: Calibri;">serif</span><span style="font-family: SimSun;">字体系列中</span><span lang="zh-CN" style="font-family: SimSun;">的一种字体）．浏览器就可能对＜</span><span lang="zh-CN" style="font-family: Calibri;">hl</span><span lang="zh-CN" style="font-family: SimSun;">＞元素使用</span><span lang="en-US" style="font-family: Calibri;">Time</span><span lang="x-none" style="font-family: Calibri;">s</span><span lang="zh-CN" style="font-family: SimSun;">。尽管</span><span lang="zh-CN" style="font-family: Calibri;">Times</span><span lang="zh-CN" style="font-family: SimSun;">与</span><span lang="zh-CN" style="font-family: Calibri;">Georgia</span><span lang="zh-CN" style="font-family: SimSun;">并不完</span>全匹配，但至少足够接近．<span style="font-family: SimSun;">因此，我们建议在所有</span><span style="font-family: Calibri;">font–family</span><span style="font-family: SimSun;">规则中都提供一个通用字体系列。这样就提供了</span><span style="font-family: SimSun;">一条后路，在用户机器</span><span style="font-family: 'Microsoft YaHei';">无法提供与规则</span><span style="font-family: SimSun;">匹配的特定字体时，就</span><span style="font-family: 'Microsoft YaHei';">可以选择</span><span style="font-family: SimSun;">一个通用字体作为替</span>换。</p>
+<p><span style="font-family: Calibri;">2.12</span><span style="font-family: SimSun;">．内联元素可以实现浮动吗？</span></p>
+<p><span style="font-family: SimSun;">在</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">中，任何元素都可以浮动。浮动元素会生成－个块级框，而不论它本身是何种</span></p>
+<p>元素。因此．对于内联元素，如果设置为浮动，会产生和块级框相同的效果。</p>
+<p><span style="font-family: Calibri;">2.13</span><span style="font-family: SimSun;">．什么倩况下需要</span><span style="font-family: 'Microsoft YaHei';">额</span><span style="font-family: SimSun;">外设置表格的显示</span><span style="font-family: 'Microsoft YaHei';">规则？</span></p>
+<p><span style="font-family: SimSun;">默认</span><span style="font-family: 'Microsoft YaHei';">情况下</span><span style="font-family: SimSun;">（不</span><span style="font-family: 'Microsoft YaHei';">额外</span><span style="font-family: SimSun;">设置表格的显示</span><span style="font-family: 'Microsoft YaHei';">规则</span><span style="font-family: SimSun;">时），表格按照自动表格布局进行显示，即，</span><span style="font-family: SimSun;">浏览器在显示表之前查看每－个单元格，然后基于所有单元格的设置计算表的大小，</span><span style="font-family: 'Microsoft YaHei';">而列</span><span style="font-family: SimSun;">的</span><span style="font-family: 'Microsoft YaHei';">宽度是</span><span style="font-family: SimSun;">由列单元格中没有折行的最宽的内容</span><span style="font-family: 'Microsoft YaHei';">设定</span><span style="font-family: SimSun;">的。此时单元格的大</span><span style="font-family: 'Microsoft YaHei';">小</span><span style="font-family: SimSun;">会适应内容的大小。</span><span style="font-family: 'Microsoft YaHei';">自</span><span style="font-family: SimSun;">动表格布局的算法在表格复杂时</span><span style="font-family: 'Microsoft YaHei';">会比较慢</span><span style="font-family: SimSun;">．这是由于它需要在确</span><span style="font-family: 'Microsoft YaHei';">定</span><span style="font-family: SimSun;">最终</span><span style="font-family: 'Microsoft YaHei';">的</span><span style="font-family: SimSun;">布局之前访</span><span style="font-family: SimSun;">问表格中所有的内容。在不能提前确定每</span><span style="font-family: 'Microsoft YaHei';">一</span><span style="font-family: SimSun;">列的大</span><span style="font-family: 'Microsoft YaHei';">小时</span><span style="font-family: SimSun;">．这种方式会非常适用。</span><span style="font-family: SimSun;">如果</span><span style="font-family: 'Microsoft YaHei';">额外</span><span style="font-family: SimSun;">设置表格的显示</span><span style="font-family: 'Microsoft YaHei';">规则</span><span style="font-family: SimSun;">，即，设置</span><span style="font-family: Calibri;">table</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">Iayout</span><span style="font-family: 'Microsoft YaHei';">属性的</span><span style="font-family: SimSun;">值为</span><span style="font-family: Calibri;">fixed</span><span style="font-family: SimSun;">，则称为固</span>定表格布局。在固定表格布局中，水平布局仅取决于表格宽度、列宽度、表格边框宽度、单元格间距，而与单元格的内容无关。浏览器将使用某列指定的宽度来计算布局（如果给了宽度的话），并使用该宽度计算该列中所有其他单元格的宽度．固定表格布局与自动表格布局相比，允许浏览器更快地对表格进行布局。因为如果指定<span style="font-family: SimSun;">使用固定表格布局，浏览器在</span><span style="font-family: 'Microsoft YaHei';">接收</span><span style="font-family: SimSun;">第一行后就可以显示表格。如果表格庞大且已经指定了</span><span style="font-family: SimSun;">大小，则会加速表</span><span style="font-family: 'Microsoft YaHei';">的显示。</span></p>
+<p><span style="font-family: Calibri;">2.14</span><span style="font-family: SimSun;">．简要描述</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">中</span><span style="font-family: Calibri;">content</span><span style="font-family: SimSun;">属性的作用</span></p>
+<p><span style="font-family: Calibri;">content</span><span style="font-family: SimSun;">属性与：</span><span style="font-family: Calibri;">before</span><span style="font-family: SimSun;">及：</span><span style="font-family: Calibri;">after</span><span style="font-family: SimSun;">伪元表配合使用，来插入生成内容，可以在元素之</span><span style="font-family: SimSun;">前或之后</span><span style="font-family: 'Microsoft YaHei';">放置生成的</span><span style="font-family: SimSun;">内容。可</span><span style="font-family: 'Microsoft YaHei';">以插入文本</span><span style="font-family: SimSun;">、图像、引号，并可以结合计数器为页面元素插入</span>编号。比如．查看如下代码：</p>
+<p><span lang="zh-CN" style="font-family: Calibri;">body{</span><span lang="en-US" style="font-family: Calibri;">co</span><span lang="x-none" style="font-family: Calibri;">unter</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">re</span><span lang="x-none" style="font-family: Calibri;">set</span><span lang="x-none" style="font-family: SimSun;">:chapter</span><span lang="zh-CN" style="font-family: Calibri;">:)</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">H</span><span lang="x-none" style="font-family: Calibri;">1</span><span lang="zh-CN" style="font-family: SimSun;">：</span><span lang="x-none" style="font-family: SimSun;">before{</span><span lang="zh-CN" style="font-family: Calibri;">content:</span><span lang="zh-CN" style="font-family: SimSun;">“第”</span><span lang="zh-CN" style="font-family: Calibri;">counter(</span><span lang="x-none" style="font-family: Calibri;">cha</span><span lang="zh-CN" style="font-family: Calibri;">pter)</span><span lang="zh-CN" style="font-family: SimSun;">”章”</span><span lang="zh-CN" style="font-family: Calibri;">;</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">hl{</span><span lang="x-none" style="font-family: Calibri;">counter</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="x-none" style="font-family: SimSun;">increment</span><span lang="zh-CN" style="font-family: Calibri;">:chap</span><span lang="x-none" style="font-family: SimSun;">t</span><span lang="zh-CN" style="font-family: Calibri;">er;}</span></p>
+<p><span style="font-family: SimSun;">使用</span><span style="font-family: Calibri;">content</span><span style="font-family: SimSun;">属性，并结台：</span><span style="font-family: Calibri;">before</span><span style="font-family: SimSun;">选择器和计数器</span><span style="font-family: Calibri;">counter</span><span style="font-family: SimSun;">，可以在每个＜</span><span style="font-family: Calibri;">hl</span><span style="font-family: SimSun;">＞元</span>素前插人新的内容。</p>
+<p><span style="font-family: Calibri;">2.15.CSSSprite</span><span style="font-family: SimSun;">是什么，谈谈这个技术的优缺点</span></p>
+<p><span style="font-family: Calibri;">CSSSPrites</span><span style="font-family: SimSun;">是一种网页图片应用处理方式，就是把网页中一些背景图片整</span><span style="font-family: 'Microsoft YaHei';">合到</span><span style="font-family: SimSun;">一张图</span><span style="font-family: SimSun;">片文件中，再利用</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">的”</span><span style="font-family: Calibri;">background</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">image”,”background</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">repeat”</span><span style="font-family: Calibri;">‘’background</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">position</span><span style="font-family: SimSun;">”的组台进行背景定位．</span></p>
+<p>其优点在于：</p>
+<p><span style="font-family: SimSun;">减少网页的</span><span style="font-family: Calibri;">http</span><span style="font-family: SimSun;">请求，提高性能，这也是</span><span style="font-family: Calibri;">CSSSPrites</span><span style="font-family: SimSun;">最大的优点，也是其</span>被广泛传播和应用的主要原因；</p>
+<p><span style="font-family: SimSun;">减少</span><span style="font-family: 'Microsoft YaHei';">图片的</span><span style="font-family: SimSun;">字节，</span><span style="font-family: 'Microsoft YaHei';">多张图片合</span><span style="font-family: SimSun;">并成</span><span style="font-family: Calibri;">1</span><span style="font-family: SimSun;">张图片的字节</span><span style="font-family: 'Microsoft YaHei';">小</span><span style="font-family: SimSun;">于多张图片的字节总和；</span></p>
+<p><span style="font-family: SimSun;">减少了命名困扰：只需对一张集台的图片命名．不需要对每一个</span><span style="font-family: 'Microsoft YaHei';">小</span><span style="font-family: SimSun;">元素进行命</span>名提高制作效率；</p>
+<p><span style="font-family: SimSun;">更</span><span style="font-family: 'Microsoft YaHei';">换风格</span><span style="font-family: SimSun;">方便：只需要在一张或</span><span style="font-family: 'Microsoft YaHei';">少张</span><span style="font-family: SimSun;">长图片上修改图片的颜色成样式，整个网页</span><span style="font-family: SimSun;">的风格就可以改变，维护起来更</span><span style="font-family: 'Microsoft YaHei';">加</span><span style="font-family: SimSun;">方便．</span></p>
+<p><span style="font-family: SimSun;">诚然</span><span style="font-family: Calibri;">CSSSprites</span><span style="font-family: 'Microsoft YaHei';">是如此</span><span style="font-family: SimSun;">的强大，但是也存在一些不可忽视的缺点：</span></p>
+<p><span style="font-family: SimSun;">图片</span><span style="font-family: 'Microsoft YaHei';">合成比较</span><span style="font-family: SimSun;">麻烦；</span></p>
+<p><span style="font-family: SimSun;">背景设置时，需</span><span style="font-family: 'Microsoft YaHei';">在得</span><span style="font-family: SimSun;">到每一个背景单元的精侧</span><span style="font-family: 'Microsoft YaHei';">位</span><span style="font-family: SimSun;">置</span><span style="font-family: Calibri;">;</span></p>
+<p>维护台成图片时，最好只是往下加图片，而不要更改已有图片．</p>
+<p><span style="font-family: Calibri;">2.16</span><span style="font-family: SimSun;">．对</span><span style="font-family: Calibri;">CSS3</span><span style="font-family: SimSun;">有了解妈？列举几个</span><span style="font-family: Calibri;">CSS3</span><span style="font-family: SimSun;">的新特性并简要描述</span></p>
+<p><span style="font-family: Calibri;">CSS3</span><span style="font-family: SimSun;">作为</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">技术的升级版本，着力于模块化发展，将规范分解为一些</span><span style="font-family: Calibri;">d</span><span style="font-family: SimSun;">、的模块，如</span><span style="font-family: SimSun;">选择器、盒子模型、列表模块、背景和边框等；并加入了很多新的模块和属性，</span><span><span style="font-family: Calibri;">比如</span></span><span style="font-family: SimSun;">复杂选</span><span style="font-family: SimSun;">择器、文字阴影、边框圆角、边框阴影、渐变、过渡、多栏布局、2</span><span style="font-family: Calibri;">D/3O</span><span style="font-family: SimSun;">转换、动画等．</span><span style="font-family: SimSun;">其中，</span><span style="font-family: Calibri;">CSS3</span><span style="font-family: SimSun;">提供了一些复马线剑条器．用于实现页面复杂情况下的元素选择，如属性选</span>择器、一些伪类和伪元素选择器；渐变用于为元素识别元素的背景；转换可以实现元素的变换，比如位移、缩放、旋转等，过渡可以实现简单的动画效果：而动画属性则可以实现复杂的动画．可以实现逐帧制作动画。</p>
+<p><span style="font-family: Calibri;">2.17</span><span style="font-family: SimSun;">．过渡与动画的区</span><span style="font-family: 'Microsoft YaHei';">别是什么</span><span style="font-family: SimSun;">？</span></p>
+<p><span style="font-family: 'Microsoft YaHei';">过渡</span><span style="font-family: SimSun;">属性</span><span style="font-family: Calibri;">transition</span><span style="font-family: SimSun;">可以在一</span><span style="font-family: 'Microsoft YaHei';">定</span><span style="font-family: SimSun;">的时间内实现元素的状态</span><span style="font-family: 'Microsoft YaHei';">过渡</span><span style="font-family: SimSun;">为最终状态用于</span><span style="font-family: 'Microsoft YaHei';">模拟</span><span style="font-family: SimSun;">以一</span><span lang="zh-CN" style="font-family: SimSun;">种过渡动画效果</span><span lang="x-none" style="font-family: SimSun;">,</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">但</span><span lang="zh-CN" style="font-family: SimSun;">是功能有限，只能用于制作简单的动画效果而动画属性</span><span lang="zh-CN" style="font-family: Calibri;">animation</span><span lang="zh-CN" style="font-family: SimSun;">可</span><span lang="zh-CN" style="font-family: SimSun;">以制</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">作类似</span><span lang="en-US" style="font-family: Calibri;">F</span><span lang="zh-CN" style="font-family: Calibri;">lash</span><span lang="zh-CN" style="font-family: SimSun;">动画，</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">通过</span><span lang="zh-CN" style="font-family: SimSun;">关键帧控制动画的每一步，控制更为精确，从而可以制作更为</span>复杂的动画。</p>
+<p><span style="font-family: Calibri;">2.18</span><span style="font-family: SimSun;">．什么是</span><span style="font-family: Calibri;">CSSreset?</span></p>
+<p><span style="font-family: Calibri;">CSSreset</span><span style="font-family: SimSun;">，又叫做</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">重写或者</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">重置，用于改写</span><span style="font-family: Calibri;">HTML</span><span style="font-family: SimSun;">标签的默认样式．</span><span lang="zh-CN" style="font-family: SimSun;">有些</span><span lang="zh-CN" style="font-family: Calibri;">H</span><span lang="en-US" style="font-family: Calibri;">T</span><span lang="zh-CN" style="font-family: Calibri;">ML</span><span lang="zh-CN" style="font-family: SimSun;">标签在浏览器里有默认的样式，例如</span><span lang="zh-CN" style="font-family: Calibri;">p</span><span lang="zh-CN" style="font-family: SimSun;">标签有上下边距，</span><span lang="zh-CN" style="font-family: Calibri;">li</span><span lang="zh-CN" style="font-family: SimSun;">标签有列表</span><span lang="zh-CN" style="font-family: SimSun;">标识符号等。这些默认样式在不同浏览器之间也会</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">有差别</span><span lang="zh-CN" style="font-family: SimSun;">，</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">例如</span><span lang="x-none" style="font-family: Calibri;">ul</span><span lang="zh-CN" style="font-family: Calibri;">l</span><span lang="zh-CN" style="font-family: SimSun;">默认带有缩进的样式，</span><span lang="zh-CN" style="font-family: SimSun;">在</span><span lang="zh-CN" style="font-family: Calibri;">IE</span><span lang="zh-CN" style="font-family: SimSun;">下．它的缩进是通过</span><span lang="zh-CN" style="font-family: Calibri;">margin</span><span lang="zh-CN" style="font-family: SimSun;">实现的，而</span><span lang="zh-CN" style="font-family: Calibri;">Firefox</span><span lang="zh-CN" style="font-family: SimSun;">下，它的缩进是由</span><span lang="zh-CN" style="font-family: Calibri;">p</span><span lang="x-none" style="font-family: Calibri;">a</span><span lang="zh-CN" style="font-family: Calibri;">dding</span><span lang="zh-CN" style="font-family: SimSun;">实现的．</span>这必然会带来浏览器兼容问题。<span style="font-family: SimSun;">因此，在</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">代码中，可以使用</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">代码去掉该些默认样式，即重新定义标签样式，</span><span style="font-family: SimSun;">从而覆盖浏览器的</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">默认属性，即</span><span style="font-family: Calibri;">CSSreset.</span><span lang="zh-CN" style="font-family: SimSun;">需要注意的是，在进行样式重写时，不建议使用</span><span lang="x-none" style="font-family: SimSun;">*</span><span lang="zh-CN" style="font-family: SimSun;">选择器进行重写，这样</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">会降低</span><span lang="zh-CN" style="font-family: SimSun;">效率，</span>影响性能。</p>
+<p><span style="font-family: Calibri;">2.19</span><span style="font-family: SimSun;">．如何清除</span><span style="font-family: 'Microsoft YaHei';">浮</span><span style="font-family: SimSun;">动元素</span><span style="font-family: 'Microsoft YaHei';">所带来</span><span style="font-family: SimSun;">的影响？</span></p>
+<p><span style="font-family: SimSun;">浮动</span><span style="font-family: 'Microsoft YaHei';">定位是指</span><span style="font-family: SimSun;">将元素排除在</span><span style="font-family: 'Microsoft YaHei';">普通流之外</span><span style="font-family: SimSun;">，并且将它放置在包含框的左边或者右边．但是</span><span style="font-family: SimSun;">依旧位于包合框之内。也就是说，浮动的框可以向左或向右移动，直至</span><span style="font-family: 'Microsoft YaHei';">它的外边缘碰到包含</span>框或另一个浮动框的边框为止。<span style="font-family: SimSun;">由于浮动</span><span style="font-family: 'Microsoft YaHei';">框不在文档</span><span style="font-family: SimSun;">的普通流中，所以元素浮动之后，其原有位置不再保留，其他元素</span><span style="font-family: SimSun;">的位置会受</span><span style="font-family: 'Microsoft YaHei';">到</span><span style="font-family: SimSun;">影响。</span><span lang="zh-CN" style="font-family: SimSun;">如果需要清除左侧或者右侧浮动元素带来的影响，则可以使用</span><span lang="x-none" style="font-family: Calibri;">cl</span><span lang="zh-CN" style="font-family: Calibri;">ear</span><span lang="zh-CN" style="font-family: SimSun;">属性来设置．另</span><span style="font-family: SimSun;">外，包合框内的子元素浮动后，如果</span><span style="font-family: 'Microsoft YaHei';">包含框没有设置具体的</span><span style="font-family: SimSun;">高度，则其高度会发生变化，此</span><span style="font-family: SimSun;">时，可以使用</span><span style="font-family: Calibri;">Overflow</span><span style="font-family: SimSun;">属性</span><span style="font-family: 'Microsoft YaHei';">来</span><span style="font-family: SimSun;">清除子元素浮动</span><span style="font-family: 'Microsoft YaHei';">后带来的</span><span style="font-family: SimSun;">影响。</span></p>
+<p><span lang="en-US" style="font-family: Calibri;">2</span><span lang="x-none" style="font-family: Calibri;">.</span><span lang="en-US" style="font-family: Calibri;">20</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">谈谈你对浏览器兼容性问题的理解</span></p>
+<p><span style="font-family: SimSun;">浏览器的类型及版本的不同会造成</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">效果不尽相同，因此需要实现浏览器兼容，也</span><span style="font-family: SimSun;">可以针对不同的浏览器编写不同的</span><span style="font-family: Calibri;">CSS.</span><span style="font-family: SimSun;">目前，各主流浏览器的新版本，对于</span><span style="font-family: Calibri;">W3C</span><span style="font-family: SimSun;">的</span><span style="font-family: 'Microsoft YaHei';">标准支持很好</span><span style="font-family: SimSun;">，因此，首先保证代码符</span><span style="font-family: SimSun;">台</span><span style="font-family: Calibri;">W3C</span><span style="font-family: SimSun;">的</span><span style="font-family: 'Microsoft YaHei';">标准</span><span style="font-family: SimSun;">，这是解决浏览器兼容问题的前提．</span><span style="font-family: SimSun;">其次，对于某些支持受限的属性，针对不同的浏览器添加泪应的前缀，比扣一</span><span style="font-family: Calibri;">webkit</span><span style="font-family: SimSun;">－、</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">O</span><span style="font-family: SimSun;">一、一</span><span style="font-family: Calibri;">mOZ</span><span style="font-family: SimSun;">一。</span><span lang="zh-CN" style="font-family: SimSun;">第三，对于</span><span lang="en-US" style="font-family: Calibri;">IE</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">的低</span><span lang="zh-CN" style="font-family: SimSun;">版本，可以编写</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">带有特定</span><span lang="zh-CN" style="font-family: SimSun;">前缀的代码，实现版本</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">识别</span><span lang="zh-CN" style="font-family: SimSun;">。</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">比如</span><span lang="zh-CN" style="font-family: SimSun;">：</span></p>
+<p><span lang="zh-CN">.bb</span><span lang="en-US">{</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">backqround</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">co</span><span lang="en-US" style="font-family: Calibri;">l</span><span lang="zh-CN" style="font-family: Calibri;">or</span><span lang="zh-CN" style="font-family: SimSun;">：</span><span lang="x-none" style="font-family: SimSun;">#flee18</span><span lang="zh-CN" style="font-family: Calibri;">/</span><span lang="x-none" style="font-family: SimSun;"><em></em></span><span lang="zh-CN" style="font-family: SimSun;">所有</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">识别</span><span lang="zh-CN" style="font-family: Calibri;">/</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">.ba</span><span lang="en-US" style="font-family: Calibri;">ck</span><span lang="x-none" style="font-family: Calibri;">groun</span><span lang="zh-CN" style="font-family: Calibri;">d</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">co</span><span lang="x-none" style="font-family: SimSun;">l</span><span lang="zh-CN" style="font-family: Calibri;">or:</span><span lang="x-none" style="font-family: Calibri;">#00deff</span><span lang="x-none" style="font-family: SimSun;">\</span><span lang="zh-CN" style="font-family: Calibri;">9:/</span><span lang="x-none" style="font-family: SimSun;"><em>IE6/7/8</em></span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">识别</span><span lang="x-none" style="font-family: SimSun;"></span><span lang="zh-CN" style="font-family: Calibri;">/</span></p>
+<p><span lang="zh-CN" style="font-family: Calibri;">+bac</span><span lang="x-none" style="font-family: SimSun;">kg</span><span lang="zh-CN" style="font-family: Calibri;">round</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">color</span><span lang="zh-CN" style="font-family: SimSun;">：</span><span lang="x-none" style="font-family: SimSun;">#a200ff</span><span lang="zh-CN" style="font-family: Calibri;">;/<em>IE</em></span><span lang="x-none" style="font-family: SimSun;">6</span><span lang="zh-CN" style="font-family: SimSun;">、</span><span lang="zh-CN" style="font-family: Calibri;">7</span><span lang="zh-CN" style="font-family: SimSun;">识别</span><span lang="x-none" style="font-family: SimSun;"></span><span lang="zh-CN" style="font-family: Calibri;">/</span></p>
+<p><span lang="x-none" style="font-family: SimSun;">_backgr</span><span lang="x-none" style="font-family: Calibri;">o</span><span lang="zh-CN" style="font-family: Calibri;">und</span><span lang="zh-CN" style="font-family: SimSun;">一</span><span lang="zh-CN" style="font-family: Calibri;">color:#1e</span><span lang="x-none" style="font-family: Calibri;">0bd1</span><span lang="en-US" style="font-family: Calibri;">/</span><span lang="zh-CN" style="font-family: Calibri;"><em></em></span><span lang="en-US" style="font-family: Calibri;">IE6</span><span lang="zh-CN" style="font-family: 'Microsoft YaHei';">识别</span><span lang="en-US" style="font-family: Calibri;"></span><span lang="zh-CN" style="font-family: Calibri;">/</span></p>
+<p>}</p>
+<p>另外，对于特定的兼容性问题，特殊解决。常见的特殊问题有：</p>
+<p><span lang="zh-CN" style="font-family: Calibri;">1</span><span lang="zh-CN" style="font-family: SimSun;">、使用</span><span lang="zh-CN" style="font-family: Calibri;">Cs</span><span lang="x-none" style="font-family: Calibri;">s</span><span lang="zh-CN" style="font-family: Calibri;">reset</span><span lang="zh-CN" style="font-family: SimSun;">：对于有些</span><span lang="zh-CN" style="font-family: Calibri;">HTML</span><span lang="zh-CN" style="font-family: SimSun;">标签，浏览器默认的</span><span lang="zh-CN" style="font-family: Calibri;">margin</span><span lang="zh-CN" style="font-family: SimSun;">和</span><span lang="zh-CN" style="font-family: Calibri;">Padding</span><span lang="zh-CN" style="font-family: SimSun;">不同，</span><span style="font-family: SimSun;">可以使用</span><span style="font-family: Calibri;">CSS</span><span style="font-family: SimSun;">代码改写默认的样式效果，从而实现统一；</span></p>
+<p><span style="font-family: Calibri;">2</span><span style="font-family: SimSun;">、</span><span style="font-family: Calibri;">lE</span><span style="font-family: SimSun;">低版本中．不能使用</span><span style="font-family: Calibri;">auto</span><span style="font-family: SimSun;">关键字实现块级元素居中显示，可以改用设置父元</span><span style="font-family: SimSun;">素的</span><span style="font-family: Calibri;">text</span><span style="font-family: SimSun;">一</span><span style="font-family: Calibri;">align;</span></p>
+<p><span style="font-family: Calibri;">3</span><span style="font-family: SimSun;">、子元素</span><span style="font-family: 'Microsoft YaHei';">上外边距</span><span style="font-family: SimSun;">时，父元素需要设置边框或者</span><span style="font-family: 'Microsoft YaHei';">外边距</span><span style="font-family: SimSun;">；</span></p>
+<p><span style="font-family: Calibri;">4</span><span style="font-family: SimSun;">、外</span><span style="font-family: 'Microsoft YaHei';">边距</span><span style="font-family: SimSun;">合并问题</span></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/web前端开发/" rel="tag"># web前端开发</a>
+          
+            <a href="/tags/前面面试题/" rel="tag"># 前面面试题</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/html/206.html" rel="next" title="GitHub for Windows 10 安装失败，An error occurred attempting to install github 的解决办法">
+                <i class="fa fa-chevron-left"></i> GitHub for Windows 10 安装失败，An error occurred attempting to install github 的解决办法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/html/214.html" rel="prev" title="Javascript、CSS、HTML面试题">
+                Javascript、CSS、HTML面试题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="http://oxi9a7h8i.bkt.clouddn.com/avatar.png"
+              alt="vscoding" />
+          
+            <p class="site-author-name" itemprop="name">vscoding</p>
+            <p class="site-description motion-element" itemprop="description">To be a better man</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">260</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">286</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://vscoding.com/" title="小石头官网" target="_blank">小石头官网</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.fanleey.com/" title="小石头返利网" target="_blank">小石头返利网</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 &mdash; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">esplori</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

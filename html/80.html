@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next gemini" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="web前端开发,前面面试题," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小石头官网" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="1.HTML5基础1.1．请描述一个网页从开始请求到最终显示的完整过程？一个网页从请求到最终显示的完整过程一般可分为如下7个步骤：1．在刘览器中输入网址；2．发送至DNS服务器并获得域名对应的WEB服务器的IP地址；3．与WEB服务器建立TCP连接；4．浏览器向WEB服务器的IP地址发送相应的HTTP请求；5.WEB服务器响应请求并返回指定URL的数据，或错误信息，如果设定重定向，则重定向到新的U">
+<meta name="keywords" content="web前端开发,前面面试题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前面面试题（HTML）">
+<meta property="og:url" content="http://esplori.github.io/html/80.html">
+<meta property="og:site_name" content="小石头官网">
+<meta property="og:description" content="1.HTML5基础1.1．请描述一个网页从开始请求到最终显示的完整过程？一个网页从请求到最终显示的完整过程一般可分为如下7个步骤：1．在刘览器中输入网址；2．发送至DNS服务器并获得域名对应的WEB服务器的IP地址；3．与WEB服务器建立TCP连接；4．浏览器向WEB服务器的IP地址发送相应的HTTP请求；5.WEB服务器响应请求并返回指定URL的数据，或错误信息，如果设定重定向，则重定向到新的U">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-09T14:38:17.341Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前面面试题（HTML）">
+<meta name="twitter:description" content="1.HTML5基础1.1．请描述一个网页从开始请求到最终显示的完整过程？一个网页从请求到最终显示的完整过程一般可分为如下7个步骤：1．在刘览器中输入网址；2．发送至DNS服务器并获得域名对应的WEB服务器的IP地址；3．与WEB服务器建立TCP连接；4．浏览器向WEB服务器的IP地址发送相应的HTTP请求；5.WEB服务器响应请求并返回指定URL的数据，或错误信息，如果设定重定向，则重定向到新的U">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://esplori.github.io/html/80.html"/>
+
+
+
+
+
+  <title>前面面试题（HTML） | 小石头官网</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?261caeb64c38e6398883c26be50e67eb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小石头官网</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江湖中的一颗小石头</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://esplori.github.io/html/80.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vscoding">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oxi9a7h8i.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小石头官网">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">前面面试题（HTML）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-29T05:07:09+08:00">
+                2016-09-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web前端/未分类/" itemprop="url" rel="index">
+                    <span itemprop="name">未分类</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>1.HTML5基础<br>1.1．请描述一个网页从开始请求到最终显示的完整过程？<br>一个网页从请求到最终显示的完整过程一般可分为如下7个步骤：<br>1．在刘览器中输入网址；<br>2．发送至DNS服务器并获得域名对应的WEB服务器的IP地址；<br>3．与WEB服务器建立TCP连接；<br>4．浏览器向WEB服务器的IP地址发送相应的HTTP请求；<br>5.WEB服务器响应请求并返回指定URL的数据，或错误信息，如果设定重定向，则重<br>定向到新的URL地址；<br>6．浏览器下载数据后解析到HTML源文件，解析的过程中实现对页面的排版，解析完成<br>后在浏览器中显示基础页面．<br>7．分析页面中的超链接并显示在当前页面，重复以上过程直至无超链接需要发送，完<br>成全部显示。<br>1.2.DOCTYPE声明的作用是什么？严格模式与混杂模式如何区分？<br>HTML语言已经存在太久了，目前必然会有一些不同版本的文档存在。为了能够让浏览器清楚你的文档的版本、类型和风格，需要在文栏的起始用DOCTYPE声明指定当前文档的版本和风格．如果在网页中提供了版本信息，则可以有利于验证页面中的代码是否符合<br>当前的版本和风格．声明位于文档中的最前面，处于＜html&gt;标签之前，告知浏览器的解析器，用什么文档类型规范来解析这个文档．在严格模式（标准模式）中，浏览器根据规范呈现页面；在混杂模式中，页面以向后兼容的方式显示，以防止老站点无法工作。如果HTML文档包含形式完整的DOCTYPE，那么它一般以标准模式呈现．对于HTML4.01文档，包含严格DTD的DOCTYP常常导致页面以标准漠式呈现．DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。<br>1.3．简要描述常见的浏览器内核。<br>浏览器内核负责对网页语法的解释并显示网页，它决定了浏览器如何显示网页的内容以及页面的格式信息．<br>常见的浏览器内核有：<br>Trident:IE浏览器；<br>Gecko:Mozilla浏览器．比如Firefox;<br>Webkit:Safari浏览器，也是Chrome浏览器的内核原型；<br>Blink:Chrome浏览器，opera浏览器。<br>1.4．如何理解html标签语义化？<br>语义化的主要目的在于，直观的认识标签（markup）和属性（attribute）的用途和作用．可以概括为：用正确的标签做正确的事情。<br>html语义化可以让页面的内容结构化，便于浏览器解析，便于搜索引擎解析，开提高代码的可维护度和重用性．<br>比如，尽可能少的使用无语义化的标签div，使用结构化标签＜header＞、＜section＞。</p>
+<p>1.5．锚点的作用是什么么？如何创建锚点？<br>锚点是文档中某行的一个记号，类似于书签，用于链接到文档中的某个位置。当定义了锚点后，我们可以创建直接跳转至该锚点（比如页面中某个小节）的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。在使用＜a＞元素创建锚点时，需要使用name属性为其命名，代码如下所示：<br>锚点一<br>然后就可以创建链接，直接跳转到锚点，代码如下所示：<br>&lt;ahref=“#anchrname1”＞回到锚点一 1.6．使用＜label＞元素显示文本与使用其他文本标记显示文本有什么不同？ 元素的直观效果是直接显示标记之间的文本，而且不会为文本呈现任何特殊效果。但是它和其他文本标记所不同的是，它为鼠标用户改进了用户体验性。 这是因为，元素可以附带一个for属性，只要将该属性的值设置为表单中任何一个控件的id属性的值，则当用户点击该标签（文本）时，浏览器就会自动将焦点转到和标签相关的表单控件上。即：如果在＜label＞元素内点击文本，就会触发此控件。 1.7．列举常用的结构标记，并描述其作用。 结构标记专门用于标识页面的不同结构，相对于使用＜div&gt;元素而言．可以实现语义化的标签。<br>常用的结性拓i己有：<br>&lt;header＞元素：用于定义文档的页眉；<br>&lt;nav＞元素：用于定义页面的导航链接部分;<br>&lt;section＞元素：用于定义文档中的节，表示文档中的一个具体的组成部分；<br>&lt;article＞元素：常用于定义立于文档的其他部分的内容；<br>&lt;footer＞元素：常用于定义某区域的脚注信息；<br>元素：常用于定义页面的一些额外组成部分，如广告栏、侧边栏和<br>相关引用信息等。<br>1.8．超级链接有哪些常见的表现形式？<br>元素用于创建超级链接，常见的表现形式有：<br>1、普通超级链接，语法为：<br>&lt;ahref=’ ‘ target＝””》文本＜/a&gt;<br>2、下载链接，即目标文档为下载资源．语法如：<br>&lt;ahref=”9ooy.zip”&gt;下载＜/a&gt;<br>3、电于邮件链接，用于链接到email，语法如：<br>联系我们&lt;／a&gt;<br>4、空链接．用于返回页面顶部，语法如：<br>&lt;ahref=”#”＞…＜/a&gt;<br>5、链接到Javascript，以实现特定的代码功能，语法如：<br>&lt;ahref=”javascript：…”&gt;JS功能＜/a&gt;</p>
+<p>1.9．简要描述行内元素和块级元素的区别<br>块级元素的前后都会自动换行，如有存在换行符一样。默认情况下，块级元素会独占一行。例如．&lt;p＞、＜hn＞、＜div&gt;都是块级元素．在显示这些元表中间的文本时，都将从新行中开始显示，其后的内容也将在新行中显示。<br>行内元素可以和其他行内元素位于同一行，在浏览器中显示时不会换行,例如，&lt;a＞、&lt;sPan＞等。对于行内元素，不能设置其高度和宽度．<br>还有一种元素，为行内块级元素，比如＜img＞、＜input＞元素等．这些元素可以和其他行内元素位于同一行，同时可以设置其宽度和宽度。</p>
+<p>1.10．表单向服务器提交数据有几种方式？这些方式有什么区别？<br>将表单数据发送给服务器的常用方式有两种：Get和Post.<br>浏览器发送给服务器的Http请求分为请求头（header）和请求主体（body）两部分。其中，必须包合头部分，用于指定发送请求的方式、目的地以及其他关键信息；而主体是可选的。在头部数据之间用一个空白行来隔开。比如，需要发送请求到页面GetstockPrice.php，且需要附带数据Symbol=MSFT<br>那么如果使用Get方式发送数据．则简化后的请求数据内容如下所示：<br>GET/rading/Getstockprice.asPx?symbol=MSFTHTTP/1.1<br>Host:localhost<br>如果使用阳St方式发送数据，则简化后的请求数据内容如下所示：<br>p0ST/Trading/Getstockpce.aspx HTTP/1.1<br>Host:localhost<br>Content-Type：application/x-www-form一urlencoded<br>Content-Length:11<br>Symbol=MSFT<br>由此可见，两种方试的区别主要在于发送数据方式不同．<br>使用Get方式向服务器发送表单数据时，表单数据将附加在URL属性的末端；采用<br>POST方法发送数据时，数据会放置在主体中发送。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/web前端开发/" rel="tag"># web前端开发</a>
+          
+            <a href="/tags/前面面试题/" rel="tag"># 前面面试题</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/html/212.html" rel="next" title="HTTP中GET与POST的区别">
+                <i class="fa fa-chevron-left"></i> HTTP中GET与POST的区别
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/html/206.html" rel="prev" title="GitHub for Windows 10 安装失败，An error occurred attempting to install github 的解决办法">
+                GitHub for Windows 10 安装失败，An error occurred attempting to install github 的解决办法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="http://oxi9a7h8i.bkt.clouddn.com/avatar.png"
+              alt="vscoding" />
+          
+            <p class="site-author-name" itemprop="name">vscoding</p>
+            <p class="site-description motion-element" itemprop="description">To be a better man</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">260</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">286</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://vscoding.com/" title="小石头官网" target="_blank">小石头官网</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.fanleey.com/" title="小石头返利网" target="_blank">小石头返利网</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 &mdash; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">esplori</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

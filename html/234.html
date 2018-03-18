@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next gemini" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="WIN7虚拟AP功能," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小石头官网" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="前提： 1.你必须是WIN7以上操作系统  2.有无线网卡！！！ 应用环境: 没有无线路由器，但是笔记本自带无线网卡！！ 无线承载网络（Wireless Hosted Network）是Windows 7和安装有 WLAN 服务的Windows Server 2008 R2中一项新增的WLAN特性。 通过此特性，Windows 计算机能通过一块物理无线网卡以客户端身份连接到（由物理设备提供的）硬A">
+<meta name="keywords" content="WIN7虚拟AP功能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WIN7虚拟AP功能">
+<meta property="og:url" content="http://esplori.github.io/html/234.html">
+<meta property="og:site_name" content="小石头官网">
+<meta property="og:description" content="前提： 1.你必须是WIN7以上操作系统  2.有无线网卡！！！ 应用环境: 没有无线路由器，但是笔记本自带无线网卡！！ 无线承载网络（Wireless Hosted Network）是Windows 7和安装有 WLAN 服务的Windows Server 2008 R2中一项新增的WLAN特性。 通过此特性，Windows 计算机能通过一块物理无线网卡以客户端身份连接到（由物理设备提供的）硬A">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-09T14:38:17.326Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WIN7虚拟AP功能">
+<meta name="twitter:description" content="前提： 1.你必须是WIN7以上操作系统  2.有无线网卡！！！ 应用环境: 没有无线路由器，但是笔记本自带无线网卡！！ 无线承载网络（Wireless Hosted Network）是Windows 7和安装有 WLAN 服务的Windows Server 2008 R2中一项新增的WLAN特性。 通过此特性，Windows 计算机能通过一块物理无线网卡以客户端身份连接到（由物理设备提供的）硬A">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://esplori.github.io/html/234.html"/>
+
+
+
+
+
+  <title>WIN7虚拟AP功能 | 小石头官网</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?261caeb64c38e6398883c26be50e67eb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小石头官网</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江湖中的一颗小石头</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://esplori.github.io/html/234.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vscoding">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oxi9a7h8i.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小石头官网">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">WIN7虚拟AP功能</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-01-03T12:50:06+08:00">
+                2014-01-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/未分类/" itemprop="url" rel="index">
+                    <span itemprop="name">未分类</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/未分类/网络技术/" itemprop="url" rel="index">
+                    <span itemprop="name">网络技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><span style="color: #000000;">前提：</span></p>
+<p><span style="color: #000000;">1.你必须是WIN7以上操作系统 </span></p>
+<p><span style="color: #000000;">2.有无线网卡！！！</span></p>
+<p><span style="color: #000000;">应用环境: 没有无线路由器，但是笔记本自带无线网卡！！</span></p>
+<p><span style="color: #515151;">无线承载网络（Wireless Hosted Network）是Windows 7和安装有 WLAN 服务的Windows Server 2008 R2中一项新增的WLAN特性。</span></p>
+<p><span style="color: #515151;">通过此特性，Windows 计算机能</span><span style="color: #ff0000;">通过一块物理无线网卡以客户端身份连接到（由物理设备提供的）硬AP，</span><span style="color: #515151;">同时又能作为软AP，允许其它设备与自己连接.</span><br><span style="color: #515151;">为了不让有些人叫板说：“这是个伪技巧，XP，vista里也可以实现无线共享啊”，所以我特此申明，XP，vista里利用传统的临时无线网（即Ad Hoc模式）来实现的，</span><span style="color: #ff0000;">临 时无线网（即Ad Hoc模式）是一种点对点网络，类似于有线网中的“双机互联”，虽然也能实现互联网共享，但主要用于两个设备临时互联，并且有的设备（如采用 Android系统的设备）并不支持连接到临时无线网。还有一个很严重的问题，由于一块无线网卡只能连接到一个无线网络，因此如果通过无线网卡连接到 Internet，就不能再使用这个无线网卡建立临时网络，共享 Internet 了。</span><span style="color: #515151;">而无线承载网络的原理就不一样了。它是通过把物理网卡虚拟一块虚拟网卡，从而模拟软AP的功能。所以当你物理网卡连在真正的无线路由时，可以通过模拟的软AP（软路由）供其他电脑上网。</span><br><span style="color: #515151;">这么好的东西我可不敢私藏，下面我看看怎么操作吧~~</span><br><span style="color: #ff0000;">第一，</span><span style="color: #515151;">一管理员身份运行</span><strong>命令提示符（开始菜单——所有程序——附件，找到**</strong>命令提示符，<strong><span style="color: #515151;">右键单击它，选择“以管理员身份运行”，在弹出的用户控制窗口中单击“是”。</span></strong>）<strong><span style="color: #515151;">然后输入命令：</span>
+</strong>netsh wlan show drivers**<br><span style="color: #515151;">如果“支持的网络承载”一栏为“是”，那么你的网卡使用“软AP”功能。</span></p>
+<p><span style="color: #515151;">第二，输入如下命令，</span><strong>启用并设定“虚拟Wifi网卡”模式：</strong></p>
+<p><strong>netsh wlan set hostednetwork mode=allow ssid=”shadowhack” key=88888888</strong><br><span style="color: #515151;">其中</span><br><span style="color: #515151;">Mode：是否启用虚拟Wifi网卡，改为disallow则为禁用，虚拟网卡即会消失。</span><br><span style="color: #515151;">Ssid：指定无线网络的名称，最好为英文。</span><br><span style="color: #515151;">Key：指定无线网络的密码。该密码用于对无线网进行安全的WPA2加密，能够很好的防止被蹭网。</span><br><span style="color: #515151;">以上三个参数其实可以单独使用，例如只使用 mode=disallow 可以直接禁用虚拟Wifi网卡。</span></p>
+<p><strong>3. **</strong>启用“Internet连接共享（ICS）”<strong>
+</strong>Internet连接共享功能请根据实际情况，是你的本地网卡，还是无线网卡，本地网卡是指你用你的有线网卡上网，猫拨号，或者路由器。无线网卡可以可以设置共享！！**<br><span style="color: #515151;">为了与其他计算机或设备共享已连接的互联网，我们需要启用 “Internet连接共享”功能。打开“网络和网络共享中心”窗口——“更改适配器设置”，右键单击已连接到Internet的网络连接，选择“属 性”，切换到“共享”选项卡，选中其中的复选框，并选择允许其共享Internet的网络连接在这里即我们的虚拟Wifi网卡：</span></p>
+<p><strong>4. **</strong>开启无线网络**<br><span style="color: #515151;">继续在命令提示符中运行以下命令：</span><br><span style="color: #515151;">netsh wlan start hostednetwork</span><br><span style="color: #515151;">即可开启我们之前设置好的无线网络（相当于打开路由器的无线功能。同理，将start改为stop即可关闭该无线网）。</span></p>
+<p><span style="color: #515151;">5.傻瓜式开启AP程序，是本人自己写的，BAT文件。</span><br><span style="color: red;"><span><span>注意：WIN7下如果你开启了UAC，则要右键——使用管理员权限运行。</span></span></span></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/WIN7虚拟AP功能/" rel="tag"># WIN7虚拟AP功能</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/html/19.html" rel="next" title="《门前》">
+                <i class="fa fa-chevron-left"></i> 《门前》
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/html/76.html" rel="prev" title="写给每一个自己">
+                写给每一个自己 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="http://oxi9a7h8i.bkt.clouddn.com/avatar.png"
+              alt="vscoding" />
+          
+            <p class="site-author-name" itemprop="name">vscoding</p>
+            <p class="site-description motion-element" itemprop="description">To be a better man</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">260</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">286</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://vscoding.com/" title="小石头官网" target="_blank">小石头官网</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.fanleey.com/" title="小石头返利网" target="_blank">小石头返利网</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 &mdash; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">esplori</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

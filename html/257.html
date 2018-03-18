@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next gemini" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="npm模块," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小石头官网" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="准备工作：Mac OS X terminal，或Linux，或Windows ，安装Node.js 1 https://www.npmjs.com/ 注册账号。 2.https://github.com/ 注册账号， https://help.github.com/ 设置好git环境。 3.打开Terminal，运行 $ npm login 输入npm的用户名，密码，email 4.为自己的模块想">
+<meta name="keywords" content="npm模块">
+<meta property="og:type" content="article">
+<meta property="og:title" content="发布你自己的npm模块">
+<meta property="og:url" content="http://esplori.github.io/html/257.html">
+<meta property="og:site_name" content="小石头官网">
+<meta property="og:description" content="准备工作：Mac OS X terminal，或Linux，或Windows ，安装Node.js 1 https://www.npmjs.com/ 注册账号。 2.https://github.com/ 注册账号， https://help.github.com/ 设置好git环境。 3.打开Terminal，运行 $ npm login 输入npm的用户名，密码，email 4.为自己的模块想">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-07T14:34:42.769Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="发布你自己的npm模块">
+<meta name="twitter:description" content="准备工作：Mac OS X terminal，或Linux，或Windows ，安装Node.js 1 https://www.npmjs.com/ 注册账号。 2.https://github.com/ 注册账号， https://help.github.com/ 设置好git环境。 3.打开Terminal，运行 $ npm login 输入npm的用户名，密码，email 4.为自己的模块想">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://esplori.github.io/html/257.html"/>
+
+
+
+
+
+  <title>发布你自己的npm模块 | 小石头官网</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?261caeb64c38e6398883c26be50e67eb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小石头官网</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江湖中的一颗小石头</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://esplori.github.io/html/257.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vscoding">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oxi9a7h8i.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小石头官网">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">发布你自己的npm模块</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-07T22:09:10+08:00">
+                2017-12-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>准备工作：Mac OS X terminal，或Linux，或Windows ，安装Node.js</p>
+<p>1 <a href="https://www.npmjs.com/" target="_blank" rel="external">https://www.npmjs.com/</a> 注册账号。</p>
+<p>2.<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a> 注册账号， <a href="https://help.github.com/" target="_blank" rel="external">https://help.github.com/</a> 设置好git环境。</p>
+<p>3.打开Terminal，运行</p>
+<pre><code>$ npm login
+输入npm的用户名，密码，email
+</code></pre><p>4.为自己的模块想一个名字，然后运行</p>
+<pre><code>$ npm view some-name
+如果返回404，说明这个名字没被占用，本文用flash-node-npm-module-shaopeng为例
+</code></pre><p>5.在github上创建一个project，以模块的名字（flash-node-npm-module-shaopeng）命名。注意以下.gitignore选Node，license可以随便选一个。</p>
+<p>6.从github上将项目同步下来</p>
+<pre><code>$ git clone &lt;your-git-repo-url&gt;
+</code></pre><p>7.切换到项目的目录中</p>
+<pre><code>$ cd &lt;your-git-repo-dir&gt;
+</code></pre><p>8.创建npm模块，</p>
+<pre><code>$ npm init
+按回车键可以直接接受默认值，我只修改了version为0.0.1，然后添加了description和license，这些以后都可以改。完成之后生成了package.json。
+</code></pre><p>9.在package.json平级的目录中，创建一个文件index.js</p>
+<pre><code>$ touch index.js
+查看目录中的所有文件，用 $ ls -la
+$ ls -la 
+</code></pre><p>10.编辑index.js，这就是你的模块的主逻辑：</p>
+<pre><code>$ nano index.js
+</code></pre><p>11.至此大部分代码工作就完成了，用git查看一下状态：</p>
+<pre><code>$ git status
+所以其实除去git创建时自带的配置文件和版权文件等，我们只创建了两个文件：package.json 和 index.js
+</code></pre><p>12.添加这两个文件到git中，然后同步到github</p>
+<pre><code>$ git add index.js package.json
+$ git commit -m &quot;npm module, initial logic&quot;
+$ git push origin master
+</code></pre><p>13.激动人心的一刻来到了，发布到npm中</p>
+<pre><code>$ npm publish
+</code></pre><p>14.验证一下是不是发布了，</p>
+<pre><code>$ npm view &lt;your-module-name&gt;
+</code></pre><p>15.用自己刚发布的模块试试手吧！创建一个本地项目（想同步到github也可以，本文略过）</p>
+<pre><code>$ cd ../
+$ mkdir test-my-module
+$ cd test-my-module
+</code></pre><p>16.创建一个npm project，使用上文中的npm init，可以按回车选择所有默认值</p>
+<pre><code>$ npm init
+</code></pre><p>17.安装我们刚刚发布的模块</p>
+<pre><code>$ npm install --save &lt;your-module-name&gt;
+注意上面的 --save 选项，它会将被安装的模块添加到当前目录的package.json中。可以查看一下package.json文件确认。
+$ cat package.json
+</code></pre><p>18.创建一个js文件，如果只是测试可以是任何名字，比如app.js</p>
+<pre><code>$ touch app.js
+$ nano app.js
+// 以下是app.js的内容
+var addFn = require(&apos;flash-node-npm-module-shaopeng&apos;);
+var add30 = addFn(30);
+var result = add30(50);
+
+console.log(result); // should be 80
+</code></pre><p>19.用Node运行app.js，查看结果</p>
+<pre><code>$ node app.js
+$ 80
+</code></pre><p>20.现在你已经掌握了最基本的创建，编写，以及发布npm模块的基本技能了。我们来回顾一下需要掌握的主要的命令：</p>
+<pre><code>$ npm login
+ 登录npm账号，为后面发布做准备
+
+$ npm view &lt;some-name&gt;
+按名称查找npm模块
+
+$ npm init
+在当前目录中创建一个npm项目，本质上是创建package.json文件
+
+$ npm publish
+发布npm模块 
+
+$ npm install --save &lt;npm-module-name&gt;
+安装一个npm模块，并添加到package.json中
+
+ 下面是常用的Terminal命令
+$ cat filename   # 显示文件内容
+$ ls -la         # 列出当前目录中所有文件
+$ mkdir dirname  # 创建一个目录
+$ cd dirname     # 切换到dirname目录下
+$ touch filename # 创建一个空文件
+$ nano filename  # Mac OS 下的文件编辑器，也可以使用vim, emacs, 记事本等 
+
+我刚发布的一个npm模块：oopstool
+</code></pre>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/npm模块/" rel="tag"># npm模块</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/html/256.html" rel="next" title="ios11键盘跟select下拉框弹不出山来">
+                <i class="fa fa-chevron-left"></i> ios11键盘跟select下拉框弹不出山来
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/html/258.html" rel="prev" title="hexo博客next主题html页面压缩">
+                hexo博客next主题html页面压缩 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="http://oxi9a7h8i.bkt.clouddn.com/avatar.png"
+              alt="vscoding" />
+          
+            <p class="site-author-name" itemprop="name">vscoding</p>
+            <p class="site-description motion-element" itemprop="description">To be a better man</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">260</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">286</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://vscoding.com/" title="小石头官网" target="_blank">小石头官网</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.fanleey.com/" title="小石头返利网" target="_blank">小石头返利网</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 &mdash; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">esplori</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

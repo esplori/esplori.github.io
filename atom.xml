@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小石头官网</title>
+  
+  <subtitle>江湖中的一颗小石头</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://esplori.github.io/"/>
+  <updated>2018-02-25T03:59:54.808Z</updated>
+  <id>http://esplori.github.io/</id>
+  
+  <author>
+    <name>esplori</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新年尹始</title>
+    <link href="http://esplori.github.io/html/262.html"/>
+    <id>http://esplori.github.io/html/262.html</id>
+    <published>2018-02-25T03:34:58.000Z</published>
+    <updated>2018-02-25T03:59:54.808Z</updated>
+    
+    <content type="html"><![CDATA[<p>新的一年又开始了，回想一下去年一整年还挺忙的。<br>明天是今年的第一天上班，想想今年还是有压力的，生活上，工作上都需有责任，<br>不过人就是这样，压力总伴随着动力。</p><p>过年回家发现家乡真的是一年一变样，镇上几十层的高楼都冒出来了，人们的穿着也越来越时尚了，<br>这也算是物是人非了吧。</p><p>街上小车多到已经堵车了，电影院KTV都有了，生活水平也提高了许多，拜年也方便了，家家都通了公路，<br>已经告别了泥巴路的时代了。</p><p>时光越长，人心越长，懵懂懂懂又是一年。<br>春风又绿江南岸，桃花依旧，不负时光。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;新的一年又开始了，回想一下去年一整年还挺忙的。&lt;br&gt;明天是今年的第一天上班，想想今年还是有压力的，生活上，工作上都需有责任，&lt;br&gt;不过人就是这样，压力总伴随着动力。&lt;/p&gt;
+&lt;p&gt;过年回家发现家乡真的是一年一变样，镇上几十层的高楼都冒出来了，人们的穿着也越来越时尚了，&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="2018" scheme="http://esplori.github.io/tags/2018/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前段时间买了个抢票软件</title>
+    <link href="http://esplori.github.io/html/261.html"/>
+    <id>http://esplori.github.io/html/261.html</id>
+    <published>2018-02-03T14:10:24.000Z</published>
+    <updated>2018-02-03T14:22:17.853Z</updated>
+    
+    <content type="html"><![CDATA[<p>  前段时间就在抢票了，发现12306很难抢票，就在网上买了个【心蓝】抢票软件，当天就抢了两张，只是通知比较麻烦，收到邮件的时候距离付款截至时间只有十几分钟了，要是再来迟点，很容易就错过了付款时间了。</p><p>  虽然有手机通知方式，但是也还有个注册步骤，希望做的更好一点。</p><p>  很好奇他的自动打码是怎么实现的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  前段时间就在抢票了，发现12306很难抢票，就在网上买了个【心蓝】抢票软件，当天就抢了两张，只是通知比较麻烦，收到邮件的时候距离付款截至时间只有十几分钟了，要是再来迟点，很容易就错过了付款时间了。&lt;/p&gt;
+&lt;p&gt;  虽然有手机通知方式，但是也还有个注册步骤，希望做的更好
+      
+    
+    </summary>
+    
+    
+      <category term="抢票软件" scheme="http://esplori.github.io/tags/%E6%8A%A2%E7%A5%A8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wifi环境下关闭window10的自动更新</title>
+    <link href="http://esplori.github.io/html/260.html"/>
+    <id>http://esplori.github.io/html/260.html</id>
+    <published>2018-02-03T13:55:13.000Z</published>
+    <updated>2018-02-03T13:58:18.934Z</updated>
+    
+    <content type="html"><![CDATA[<p>选择当前已连接的wifi，点击属性，把【设为按流量计费的连接】打开就可以了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;选择当前已连接的wifi，点击属性，把【设为按流量计费的连接】打开就可以了。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="window10" scheme="http://esplori.github.io/tags/window10/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用空闲虚拟主机搭建淘宝客网站</title>
+    <link href="http://esplori.github.io/html/259.html"/>
+    <id>http://esplori.github.io/html/259.html</id>
+    <published>2017-12-23T09:12:55.000Z</published>
+    <updated>2017-12-23T09:33:18.634Z</updated>
+    
+    <content type="html"><![CDATA[<p>之前买了一个小空间的虚拟主机，只有300多M，平时工作也比较忙，没时间管，就弄了一个淘宝客网站<a href="http://www.fanleey.com" target="_blank" rel="external">小石头返利网</a>放上面了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;之前买了一个小空间的虚拟主机，只有300多M，平时工作也比较忙，没时间管，就弄了一个淘宝客网站&lt;a href=&quot;http://www.fanleey.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;小石头返利网&lt;/a&gt;放上面了。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="淘宝客" scheme="http://esplori.github.io/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客next主题html页面压缩</title>
+    <link href="http://esplori.github.io/html/258.html"/>
+    <id>http://esplori.github.io/html/258.html</id>
+    <published>2017-12-12T14:19:40.000Z</published>
+    <updated>2017-12-12T14:28:58.275Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于next主题没有压缩md文件，导致最终生成的Md文件没有删除空行。所以可能用gulp来布压缩一下，由于本人设置生成的文件最终是以html结尾，这样方便搜索引擎收录，压缩也方便。<br>单独建了一个html文件夹放生成的html文件，也就是每篇博客最终是一个html文件，这个后缀只需要在_config.yml 文件里面的permalink 关键字后面设置成permalink: html/:title.html 就可以了。</p><p>1 用npm安装gulp和gulp-minify-html 两个插件</p><p>2 在根目录下建立一下gulpfile.js文件</p><p>3 写入以下代码：</p><pre><code>var gulp = require(&apos;gulp&apos;),    uglify = require(&quot;gulp-uglify&quot;),    miniHtml = require(&quot;gulp-minify-html&quot;);gulp.task(&apos;js&apos;, function () {    gulp.src([&apos;public/js/src/schemes/*.js&apos;,&apos;public/js/src/*.js&apos;]) // 要压缩的js文件    .pipe(uglify())  //使用uglify进行压缩,更多配置请参考：    .pipe(gulp.dest(&apos;public/js/src/schemes/ys&apos;)); //压缩后的路径});gulp.task(&apos;html&apos;, function () {    gulp.src([&apos;public/html/*.html&apos;]) // 要压缩的js文件    .pipe(miniHtml())  //使用uglify进行压缩,更多配置请参考：    .pipe(gulp.dest(&quot;public/html/&quot;)); //压缩后的路径});</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;由于next主题没有压缩md文件，导致最终生成的Md文件没有删除空行。所以可能用gulp来布压缩一下，由于本人设置生成的文件最终是以html结尾，这样方便搜索引擎收录，压缩也方便。&lt;br&gt;单独建了一个html文件夹放生成的html文件，也就是每篇博客最终是一个html文件，
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://esplori.github.io/tags/hexo/"/>
+    
+      <category term="next" scheme="http://esplori.github.io/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>发布你自己的npm模块</title>
+    <link href="http://esplori.github.io/html/257.html"/>
+    <id>http://esplori.github.io/html/257.html</id>
+    <published>2017-12-07T14:09:10.000Z</published>
+    <updated>2017-12-07T14:34:42.769Z</updated>
+    
+    <content type="html"><![CDATA[<p>准备工作：Mac OS X terminal，或Linux，或Windows ，安装Node.js</p><p>1 <a href="https://www.npmjs.com/" target="_blank" rel="external">https://www.npmjs.com/</a> 注册账号。</p><p>2.<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a> 注册账号， <a href="https://help.github.com/" target="_blank" rel="external">https://help.github.com/</a> 设置好git环境。</p><p>3.打开Terminal，运行</p><pre><code>$ npm login输入npm的用户名，密码，email</code></pre><p>4.为自己的模块想一个名字，然后运行</p><pre><code>$ npm view some-name如果返回404，说明这个名字没被占用，本文用flash-node-npm-module-shaopeng为例</code></pre><p>5.在github上创建一个project，以模块的名字（flash-node-npm-module-shaopeng）命名。注意以下.gitignore选Node，license可以随便选一个。</p><p>6.从github上将项目同步下来</p><pre><code>$ git clone &lt;your-git-repo-url&gt;</code></pre><p>7.切换到项目的目录中</p><pre><code>$ cd &lt;your-git-repo-dir&gt;</code></pre><p>8.创建npm模块，</p><pre><code>$ npm init按回车键可以直接接受默认值，我只修改了version为0.0.1，然后添加了description和license，这些以后都可以改。完成之后生成了package.json。</code></pre><p>9.在package.json平级的目录中，创建一个文件index.js</p><pre><code>$ touch index.js查看目录中的所有文件，用 $ ls -la$ ls -la </code></pre><p>10.编辑index.js，这就是你的模块的主逻辑：</p><pre><code>$ nano index.js</code></pre><p>11.至此大部分代码工作就完成了，用git查看一下状态：</p><pre><code>$ git status所以其实除去git创建时自带的配置文件和版权文件等，我们只创建了两个文件：package.json 和 index.js</code></pre><p>12.添加这两个文件到git中，然后同步到github</p><pre><code>$ git add index.js package.json$ git commit -m &quot;npm module, initial logic&quot;$ git push origin master</code></pre><p>13.激动人心的一刻来到了，发布到npm中</p><pre><code>$ npm publish</code></pre><p>14.验证一下是不是发布了，</p><pre><code>$ npm view &lt;your-module-name&gt;</code></pre><p>15.用自己刚发布的模块试试手吧！创建一个本地项目（想同步到github也可以，本文略过）</p><pre><code>$ cd ../$ mkdir test-my-module$ cd test-my-module</code></pre><p>16.创建一个npm project，使用上文中的npm init，可以按回车选择所有默认值</p><pre><code>$ npm init</code></pre><p>17.安装我们刚刚发布的模块</p><pre><code>$ npm install --save &lt;your-module-name&gt;注意上面的 --save 选项，它会将被安装的模块添加到当前目录的package.json中。可以查看一下package.json文件确认。$ cat package.json</code></pre><p>18.创建一个js文件，如果只是测试可以是任何名字，比如app.js</p><pre><code>$ touch app.js$ nano app.js// 以下是app.js的内容var addFn = require(&apos;flash-node-npm-module-shaopeng&apos;);var add30 = addFn(30);var result = add30(50);console.log(result); // should be 80</code></pre><p>19.用Node运行app.js，查看结果</p><pre><code>$ node app.js$ 80</code></pre><p>20.现在你已经掌握了最基本的创建，编写，以及发布npm模块的基本技能了。我们来回顾一下需要掌握的主要的命令：</p><pre><code>$ npm login 登录npm账号，为后面发布做准备$ npm view &lt;some-name&gt;按名称查找npm模块$ npm init在当前目录中创建一个npm项目，本质上是创建package.json文件$ npm publish发布npm模块 $ npm install --save &lt;npm-module-name&gt;安装一个npm模块，并添加到package.json中 下面是常用的Terminal命令$ cat filename   # 显示文件内容$ ls -la         # 列出当前目录中所有文件$ mkdir dirname  # 创建一个目录$ cd dirname     # 切换到dirname目录下$ touch filename # 创建一个空文件$ nano filename  # Mac OS 下的文件编辑器，也可以使用vim, emacs, 记事本等 我刚发布的一个npm模块：oopstool</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;准备工作：Mac OS X terminal，或Linux，或Windows ，安装Node.js&lt;/p&gt;
+&lt;p&gt;1 &lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.np
+      
+    
+    </summary>
+    
+    
+      <category term="npm模块" scheme="http://esplori.github.io/tags/npm%E6%A8%A1%E5%9D%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ios11键盘跟select下拉框弹不出山来</title>
+    <link href="http://esplori.github.io/html/256.html"/>
+    <id>http://esplori.github.io/html/256.html</id>
+    <published>2017-12-04T13:29:09.000Z</published>
+    <updated>2017-12-04T13:33:28.694Z</updated>
+    
+    <content type="html"><![CDATA[<p>自从升级ios11后，键盘跟select下拉框经常弹不出山来，app属于hybird应用，页面是h5写的，壳是native，请问有啥办法</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;自从升级ios11后，键盘跟select下拉框经常弹不出山来，app属于hybird应用，页面是h5写的，壳是native，请问有啥办法&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="ios键盘弹不出来" scheme="http://esplori.github.io/tags/ios%E9%94%AE%E7%9B%98%E5%BC%B9%E4%B8%8D%E5%87%BA%E6%9D%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>localStorage的一个bug</title>
+    <link href="http://esplori.github.io/html/255.html"/>
+    <id>http://esplori.github.io/html/255.html</id>
+    <published>2017-12-01T06:02:53.000Z</published>
+    <updated>2017-12-01T06:16:39.142Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天我们app在上线的时候发现有一个bug，首页的入口是通过后台开关配置的，开关打开显示入口，关闭则隐藏入口。<br>上线前我们做了测试，用一个用权限的账号先登录，显示有入口，退出再用一个没有权限的账号登录，第一次没有显示入口，但是刷新一个就又显示入口了，定位了一会，发现用localStorage存的开关字段没有生效，没有清除掉。<br>解决办法就是不remomve掉，而是直接置为false就可以了</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;昨天我们app在上线的时候发现有一个bug，首页的入口是通过后台开关配置的，开关打开显示入口，关闭则隐藏入口。&lt;br&gt;上线前我们做了测试，用一个用权限的账号先登录，显示有入口，退出再用一个没有权限的账号登录，第一次没有显示入口，但是刷新一个就又显示入口了，定位了一会，发现用
+      
+    
+    </summary>
+    
+    
+      <category term="localStorage" scheme="http://esplori.github.io/tags/localStorage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一些JavaScript编程黑科技</title>
+    <link href="http://esplori.github.io/html/208.html"/>
+    <id>http://esplori.github.io/html/208.html</id>
+    <published>2017-10-29T13:42:21.000Z</published>
+    <updated>2017-10-29T13:45:34.079Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、单行写一个评级组件</p><p>“★★★★★☆☆☆☆☆”.slice(5 - rate, 10 - rate);定义一个变量rate是1到5的值，然后执行上面代码，看图</p><p>才发现插件什么的都弱爆了</p><p>2、如何装逼用代码骂别人SB</p><p>(!(~+[])+{})[–[~+””][+[]]<em>[~+[]] + ~~!+[]]+({}+[])[[~!+[]]</em>~+[]]</p><p>了解为什么请移步：一行能装逼的JavaScript代码</p><p>3、如何用代码优雅的证明自己NB</p><p>这个牛逼了</p><p>console.log(([][[]]+[])[+!![]]+([]+{})[!+[]+!![]])</p><p>4、JavaScript 错误处理的方式的正确姿势</p><p>舅服你</p><p>try {<br>    something<br>} catch (e) {<br>    window.location.href =<br>        “<a href="http://stackoverflow.com/search?q=[js]+" target="_blank" rel="external">http://stackoverflow.com/search?q=[js]+</a>“ +<br>        e.message;<br>}</p><p>5、从一行代码里面学点JavaScript</p><p>[].forEach.call($(“<em>“),function(a){<br>    a.style.outline=”1px solid #”+(~~(Math.random()</em>(1&lt;&lt;24))).toString(16)<br>})<br>翻译成正常语言就是这样的</p><p>Array.prototype.forEach.call(document.querySelectorAll(‘<em>‘),<br>dom =&gt; dom.style.outline = `1px solid #${parseInt(Math.random() </em><br>Math.pow(2,24)).toString(16)}`)<br>接下来在浏览器控制看看：something magic happens</p><p>具体分析请参见这篇文章：从一行代码里面学点JavaScript</p><p>6、论如何优雅的取随机字符串</p><p>Math.random().toString(16).substring(2) // 13位 Math.random().toString(36).substring(2) // 11位</p><p>7、(10)<a href="">“toString”</a> === “10”</p><p>解析请移步：js奇淫技巧1</p><p>8、匿名函数自执行</p><p>这么多写法你选择哪一种？我选择死亡。</p><p>( function() {}() );<br>( function() {} )();<br>[ function() {}() ];</p><p>~ function() {}();<br>! function() {}();</p><ul><li>function() {}();</li></ul><ul><li>function() {}();</li></ul><p>delete function() {}();<br>typeof function() {}();<br>void function() {}();<br>new function() {}();<br>new function() {};</p><p>var f = function() {}();</p><p>1, function() {}();<br>1 ^ function() {}();<br>1 &gt; function() {}();<br>// …</p><p>9、另外一种undefined</p><p>从来不需要声明一个变量的值是undefined，因为JavaScript会自动把一个未赋值的变量置为undefined。所有如果你在代码里这么写，会被鄙视的</p><p>var data = undefined;<br>但是如果你就是强迫症发作，一定要再声明一个暂时没有值的变量的时候赋上一个undefined。那你可以考虑这么做：</p><p>var data = void 0; // undefined<br>void在JavaScript中是一个操作符，对传入的操作不执行并且返回undefined。void后面可以跟()来用，例如void(0)，看起来是不是很熟悉？没错，在HTML里阻止带href的默认点击操作时，都喜欢把href写成javascript:void(0)，实际上也是依靠void操作不执行的意思。</p><p>当然，除了出于装逼的原因外，实际用途上不太赞成使用void，因为void的出现是为了兼容早起ECMAScript标准中没有undefined属性。void 0的写法让代码晦涩难懂。</p><p>10、论如何优雅的取整</p><p>var a = ~~2.33</p><p>var b= 2.33 | 0</p><p>var c= 2.33 &gt;&gt; 0</p><p>11、如何优雅的实现金钱格式化：1234567890 –&gt; 1,234,567,890</p><p>用正则魔法实现：</p><p>var test1 = ‘1234567890’<br>var format = test1.replace(/\B(?=(\d{3})+(?!\d))/g, ‘,’)</p><p>console.log(format) // 1,234,567,890<br>非正则的优雅实现：</p><p>function formatCash(str) {<br>       return str.split(‘’).reverse().reduce((prev, next, index) =&gt; {<br>            return ((index % 3) ? next : (next + ‘,’)) + prev<br>       })<br>}<br>console.log(formatCash(‘1234567890’)) // 1,234,567,890</p><p>12、这个我服，还有这个你很机智</p><p>我服</p><p>while (1) {<br>    alert(‘牛逼你把我关了啊’)<br>}<br>你很机智，好一个障眼法</p><p>清除缓存： <a href="javascript:alert('清除成功');" target="_blank" rel="external">清除缓存</a></p><p>13、逗号运算符</p><p>var a = 0;<br>var b = ( a++, 99 );<br>console.log(a); // 1 console.log(b); // 99</p><p>14、论如何最佳的让两个整数交换数值</p><p>常规办法：</p><p>var a=1,b=2;<br>a += b;<br>b = a - b;<br>a -= b;<br>缺点也很明显，整型数据溢出，对于32位字符最大表示数字是2147483647，如果是2147483645和2147483646交换就失败了。 黑科技办法：</p><p>a ^= b;<br>b ^= a;<br>a ^= b;</p><p>哈哈，看不懂的童鞋建议去补习一下C语言的位操作，我就不去复习了，以前学嵌入式时候学的位操作都忘了</p><p>15、实现标准JSON的深拷贝</p><p>var a = {<br>    a: 1,<br>    b: { c: 1, d: 2 }<br>}<br>var b=JSON.parse(JSON.stringify(a))</p><p>不考虑IE的情况下，标准JSON格式的对象蛮实用，不过对于undefined和function的会忽略掉。</p><p>16、不用Number、parseInt和parseFloat和方法把”1”字符串转换成数字</p><p>哈哈，不准用强制类型转换，那么就想到了强大了隐式转换</p><p>var a =1<br>+a</p><p>17、如何装逼的写出”hello world!”</p><p>滚动条很长哦 </p><p>([]+[][(![]+[])[!+[]+!![]+!![]]+([]+{})[+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]][([]+{})[!+[]+!![]+!![]+!![]+!![]]+([]+{})[+!![]]+([][[]]+[])[+!![]]+(![]+[])[!+[]+!![]+!!<br>居然能运行，牛逼的隐式转换</p><p>居然能运行，牛逼的隐式转换</p><p>18、parseInt(0.0000008) === 8</p><p>19、++[[]][+[]]+[+[]] == 10</p><p>强大的隐式转换，23333</p><p>20、0.1 + 0.2 == 0.3</p><p>0.1 +0.2 == 0.3 竟然是不成立的。。。。所以这就是为什么数据库存储对于货币的最小单位都是分。</p><p>简单说，0.1和0.2的二进制浮点表示都不是精确的，所以相加后不是0.3，接近（不等于）<br>0.30000000000000004。</p><p>所以，比较数字时，应该有个宽容值。ES6中这个宽容值被预定义了：Number.EPSILON。</p><p>21、最短的代码实现数组去重</p><p>[…new Set([1, “1”, 2, 1, 1, 3])]<br>前不久面试阿里就问了这道题，哈哈，所以也写上一下</p><p>22、用最短的代码实现一个长度为m(6)且值都n(8)的数组</p><p>Array(6).fill(8)<br>这个够短了吧，好像是当初哪里看到的一个面试题，就自己想到了ES6的一些API</p><p>23、短路表达式</p><p>条件判断</p><p>var a = b &amp;&amp; 1<br>    // 相当于<br>if (b) {<br>    a = 1<br>} else {<br>    a = b<br>}</p><p>var a = b || 1<br>    // 相当于<br>if (b) {<br>    a = b<br>} else {<br>    a = 1<br>}</p><p>24、JavaScript版迷宫</p><p>逃出迷宫，2333</p><p>25、取出一个数组中的最大值和最小值</p><p>var numbers = [5, 458 , 120 , -215 , 228 , 400 , 122205, -85411];<br>var maxInNumbers = Math.max.apply(Math, numbers);<br>var minInNumbers = Math.min.apply(Math, numbers);</p><p>26、将argruments对象转换成数组</p><p>var argArray = Array.prototype.slice.call(arguments);</p><p>或者ES6：</p><p>var argArray = Array.from(arguments)</p><p>27、javascript高逼格之Function构造函数</p><p>很多JavaScript教程都告诉我们，不要直接用内置对象的构造函数来创建基本变量，例如var arr = new Array(2); 的写法就应该用var arr = [1, 2];的写法来取代。</p><p>但是，Function构造函数（注意是大写的Function）有点特别。Function构造函数接受的参数中，第一个是要传入的参数名，第二个是函数内的代码（用字符串来表示）。</p><p>var f = new Function(‘a’, ‘alert(a)’);<br>f(‘jawil’); // 将会弹出窗口显示jawil<br>这种方式可以根据传入字符串内容来创建一个函数 是不是高大上？！</p><p>28、从一个数组中找到一个数，O(n)的算法，找不到就返回 null。</p><p>正常的版本:</p><p>function find (x, y) {<br>  for ( let i = 0; i &lt; x.length; i++ ) {<br>    if ( x[i] == y ) return i;<br>  }<br>  return null;<br>}</p><p>let arr = [0,1,2,3,4,5]<br>console.log(find(arr, 2))<br>console.log(find(arr, 8))<br>结果到了函数式成了下面这个样子（好像上面的那些代码在下面若影若现，不过又有点不太一样，为了消掉if语言，让其看上去更像一个表达式，动用了 ? 号表达式）：</p><p>//函数式的版本<br>const find = ( f =&gt; f(f) ) ( f =&gt;<br>  (next =&gt; (x, y, i = 0) =&gt;<br>    ( i &gt;= x.length) ?  null :<br>      ( x[i] == y ) ? i :<br>        next(x, y, i+1))((…args) =&gt;<br>          (f(f))(…args)))</p><p>let arr = [0,1,2,3,4,5]<br>console.log(find(arr, 2))<br>console.log(find(arr, 8))</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、单行写一个评级组件&lt;/p&gt;
+&lt;p&gt;“★★★★★☆☆☆☆☆”.slice(5 - rate, 10 - rate);定义一个变量rate是1到5的值，然后执行上面代码，看图&lt;/p&gt;
+&lt;p&gt;才发现插件什么的都弱爆了&lt;/p&gt;
+&lt;p&gt;2、如何装逼用代码骂别人SB&lt;/p&gt;
+&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="js黑科技" scheme="http://esplori.github.io/tags/js%E9%BB%91%E7%A7%91%E6%8A%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为什么说农业税、屠宰税是曾经的民生之痛</title>
+    <link href="http://esplori.github.io/html/254.html"/>
+    <id>http://esplori.github.io/html/254.html</id>
+    <published>2017-10-23T13:29:32.731Z</published>
+    <updated>2017-10-23T13:30:36.537Z</updated>
+    
+    <content type="html"><![CDATA[<p>1999年8月，江西丰城某乡一位周姓农民，因为不满当地政府加诸于农民头上的过重负担，自费收集整理了当时中央和江西省委的关于减轻农民负担的文件并广为散发，鼓动农民抵制不合法不合理的上缴，被乡政府带走送到“学习班”，两天后非正常死亡。家属50多人到乡政府“闹事”，被乡政府以蛮横的态度驱散。乡政府恶劣的行径激怒了淳朴的农民，总共四个乡镇数万农民自发带着农具冲向该乡，包围并捣毁了乡政府。乡长和一名乡干部被从二楼扔下，愤怒的农民当场在乡政府刨了一个大坑将此二人活埋。乡派出所长和一名民警被当场打死，派出所长的尸体被吊在树上示众。乡党委书记乘乡中学一教师的摩托侥幸逃脱跑到县城。</p><p>当夜，江西省调派大批警力进驻丰城，事件逐步平息。所谓的为首人员逃入山里。31日，国务院召开紧急电视电话会议，乡镇一级的两个正职全部参加，这是非常罕见的。会上通报了多起因农民负担死人而引发的重大群体事件。时任总理和分管农业的副总理作重要讲话。会议强调了全国立即停止以强制手段征收上缴。<br>2000年，江西省试点取消农业税。2003年，全国取消农业税。<br>经过90年代的人如果在农村呆过，是非常清楚那时候农民生活是怎样的悲苦，负担是怎样的不合理，而上级的死命令又是如何把农村基层干部变成心狠手辣的暴徒。当时农村基层干部为了完成任务，扒房牵牛、搬谷拉猪是无所不为。有一个在基层农村干部中广为流传的顺口溜是“上吊不解绳，喝药不接瓶，投河不拉人。要是敢打人，就抓你的人。”在丰城事件以前，农民的反抗多数是孤立的个别的。老实的农民选择自杀的居多，也有个别冲动的会选择杀人，但是从来没有像丰城事件那样大规模的暴力行动。<br>难道上面的那些官僚们不清楚农村基层的情况吗？难道时任总理没有看到李昌平同志的信吗？有无数的底层民众写信上访了，有很多基层干部看到危机向上反映过。但是，都没有改变那些“铁心肠”！<br>最终，只有丰城的农民兄弟们的铁拳才软化了官僚们的“铁心肠”，终于换来了取消农业税这一善政！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1999年8月，江西丰城某乡一位周姓农民，因为不满当地政府加诸于农民头上的过重负担，自费收集整理了当时中央和江西省委的关于减轻农民负担的文件并广为散发，鼓动农民抵制不合法不合理的上缴，被乡政府带走送到“学习班”，两天后非正常死亡。家属50多人到乡政府“闹事”，被乡政府以蛮横
+      
+    
+    </summary>
+    
+    
+      <category term="农业税" scheme="http://esplori.github.io/tags/%E5%86%9C%E4%B8%9A%E7%A8%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10没有新建文件夹选项的解决办法</title>
+    <link href="http://esplori.github.io/html/239.html"/>
+    <id>http://esplori.github.io/html/239.html</id>
+    <published>2017-10-15T01:55:02.000Z</published>
+    <updated>2017-10-15T02:06:53.871Z</updated>
+    
+    <content type="html"><![CDATA[<p>右键点击桌面空白处，在右键菜单中发现没有新建项怎么办？</p><p>桌面右键菜单没有新建项的恢复方法 - 修改注册表值<br>　　注册表路径：<br>　　HKEY_CLASSES_ROOT\Directory\Background\shellex\<br>　　ContextMenuHandlers\New<br>　　<br>在New对应的右侧窗口，左键双击：默认，在弹出的编辑字符串的对话框中，把数值数据更改为：{D969A300-E7FF-11d0-A93B-00A0C90F2719}，再点击：确定<br>回到系统桌面，右键点击桌面空白处，可见：新建 - 文件夹，问题已解决。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;右键点击桌面空白处，在右键菜单中发现没有新建项怎么办？&lt;/p&gt;
+&lt;p&gt;桌面右键菜单没有新建项的恢复方法 - 修改注册表值&lt;br&gt;　　注册表路径：&lt;br&gt;　　HKEY_CLASSES_ROOT\Directory\Background\shellex\&lt;br&gt;　　Contex
+      
+    
+    </summary>
+    
+    
+      <category term="win10" scheme="http://esplori.github.io/tags/win10/"/>
+    
+      <category term="win10没有新建文件夹选项" scheme="http://esplori.github.io/tags/win10%E6%B2%A1%E6%9C%89%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%E9%80%89%E9%A1%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>parseInth转换</title>
+    <link href="http://esplori.github.io/html/226.html"/>
+    <id>http://esplori.github.io/html/226.html</id>
+    <published>2017-10-12T14:57:46.000Z</published>
+    <updated>2017-10-12T14:59:25.828Z</updated>
+    
+    <content type="html"><![CDATA[<p>有很多种方式可以将字符串转为数字。我能想到的方式就至少有5种！</p><p>parseInt(num); // 默认方式 (没有基数)<br>parseInt(num, 10); // parseInt 使用基数 (十进制)<br>parseFloat(num) // 浮点型<br>Number(num); // Number 构造函数<br>~~num // 按位取反<br>num / 1 // 被 1 除<br>num * 1 // 被 1 乘<br>num - 0 // 减 0<br>+num // 一元操作 “+”</p><p>该使用哪种方式？什么时候？为什么？这得分析每一种方式和使用它们时常见的陷阱。</p><p>根据 JsPerf.com 上的 benchmarks 一组测试表明，大多数浏览器都对 ParseInt 做过优化。虽然它可能是最快的一种方式，但是有可能会引起以下几种错误：</p><p>parseInt(‘08’) // 在一些老的浏览器里会返回 0<br>parseInt(‘44.jpg’) // 返回 44</p><p>parseInt：总是使用基数 = parseInt(num, 10)；如果你不想让它从字符里面推断数值，就不要使用它。</p><p>PareseFloat 又如何呢？它在不处理 16 进制数字的时候，都发挥的很好；例子：</p><p>parseInt(-0xFF) // returns -255<br>parseInt(“-0xFF”) // returns -255<br>parseFloat(-0xFF) // returns -255<br>parseFloat(“-0xFF”) // returns 0</p><p>(注, 一个负 16 进制数字符串是比较特殊的例子，当你在应用中解析它的时候，可能会导致意想不到的错误。 永远记得在应用中检查 NaN 值，以避免出现意外。)</p><p>另外， 当数字中含有字符时它会产生跟 parseInt 一样的错误：</p><p><code>parseFloat(&#39;44.jpg&#39;) // returns 44</code></p><p>**parseFloat: 处理 16 进制数字的时候需要注意；如果你不想让它从字符里面推断数值，就不要使用它。”</p><p>另外一种方法是 “按位取反” (~)。您仅可以使用它将字符串转换为整型，而不能转为浮点型数字。它比较好的一面是，当碰到非数字字符的时候，它会返回 0。</p><p>~~1.23 // returns 1<br>~~”1.23” // returns 1<br>~~”23” // returns 23<br>~~”Hello world” // returns 0</p><p>它做了什么？ 它 “翻转” 了每一个二进制位, 也被称为 A1 补数。你可以使用它，但是也要意识到它只能处理成整数。所以，除非你确定数值的范围在带符号 32 位整型之内（因为在规范里称为 ToInt32），就不要使用它。</p><p>按位取反，使用的时候确保不存在非数字字符，只可用做整型转换</p><p>Number 函数怎么样呢？当它解析的时候，会试图从你给的字符中找出数字：</p><p>Number(“023”) // returns 23<br>Number(023) // returns 19</p><p>（注， 023 实际上是一个八进制数。不管你做什么，它都会返回 19；对于没有引号的 16 进制数来说，是一样的）</p><p>Number 函数同样也是 JsPerf 测试结果里最慢的方法。</p><p>Number, 建议不要使用</p><p>最后一种方式：一元操作。</p><p>“1.23” * 1 // returns 1.23<br>“0xFF” - 0 // returns 255<br>“0xFF.jpg” / 1 // returns NaN<br>+”023” // returns 23</p><p>不像其它方式，一元操作会在处理非数字时，抛出一个 NaN 值。这也是我最喜欢的一种方式，因为一个字符不应该被考虑为 0 或者从它有多少位来猜测。大多数时候我会使用 + 操作，因为它是最不容易引起混乱的操作。不过一元操作并不是性能最好的一种方式 ——— 即使 -0 操作性能不错。</p><p>字符串转数字最好的方式？</p><p>负 16 进制数是唯一在字符串中断开的数字。其它的数字应首先解析成字符串，然后通过一元操作或者带有基数的 parseInt 来解析成数字。parseFloat 具有性能上的优势，但是它会在相较于返回 NaN 更为合适的情况下返回一些数字。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;有很多种方式可以将字符串转为数字。我能想到的方式就至少有5种！&lt;/p&gt;
+&lt;p&gt;parseInt(num); // 默认方式 (没有基数)&lt;br&gt;parseInt(num, 10); // parseInt 使用基数 (十进制)&lt;br&gt;parseFloat(num) // 浮
+      
+    
+    </summary>
+    
+    
+      <category term="js" scheme="http://esplori.github.io/tags/js/"/>
+    
+      <category term="字符串转数字" scheme="http://esplori.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%95%B0%E5%AD%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>position 为fixed的话，在ios的input被点击后就会失效</title>
+    <link href="http://esplori.github.io/html/228.html"/>
+    <id>http://esplori.github.io/html/228.html</id>
+    <published>2017-09-18T14:22:12.000Z</published>
+    <updated>2017-10-08T12:44:54.091Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="position-为fixed的话，在ios的input被点击后就会失效"><a href="#position-为fixed的话，在ios的input被点击后就会失效" class="headerlink" title="position 为fixed的话，在ios的input被点击后就会失效"></a>position 为fixed的话，在ios的input被点击后就会失效</h2><p>网上某个用户的说法：</p><blockquote><p>在使用bootstrap的navbar-fixed-top时，发现在iPhone上的微信里面，当点击input弹出输入法之后，顶部fixed的navbar消失，在输入法没有关闭的情况下，向上滚动，会发现navbar在半空中。<br>Google了一下，发现这个问题在iOS中很常见，Bootstrap也对此进行了说明。</p><p>Virtual keyboardsAlso, note that if you’re using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn’t update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to position: absolute or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.</p><p>不过我在最近刚更新的iOS8.3的Safari中，没有发现这个问题。在8.3的Safari中，点击input弹出输入法之后，fixed元素会失效，navbar回到最顶端，没有浮在半空中。猜测是在弹出虚拟键盘之后为了节省页面空间，而对fixed的元素进行了处理，但是在微信中的浏览器上处理出了点问题。<br>目前发现最好的解决方案是在点击input之后，直接把fixed的元素变成absolute的，不需要浏览器自己去做处理。<br>有人说在滚动时用timer实时调整元素位置，我觉得这个很低端。浏览器去处理fixed元素自然有它的道理，确实可以节省屏幕空间。我们其实也没有必要在这个情况下强制显示navbar，这时用户的重点在于输入。当我们input失去焦点之后，输入法关闭，这时我们再显示出navbar。</p></blockquote><p>这种情况在正常的浏览器中，如果元素的position 为fixed的话，在ios的input被点击后就会失效。<br>所以只要改成这样:position: absolute 就可以了</p><hr><h2 id="IOS-Safari浏览器不能正确解释出Javascript中的-new-Date-的带”-“的日期对象"><a href="#IOS-Safari浏览器不能正确解释出Javascript中的-new-Date-的带”-“的日期对象" class="headerlink" title="IOS Safari浏览器不能正确解释出Javascript中的 new Date() 的带”-“的日期对象"></a>IOS Safari浏览器不能正确解释出Javascript中的 new Date() 的带”-“的日期对象</h2><p>在IOSSafari浏览器不能正确解释出Javascript中的 new Date(‘2013-10-21’) 的带”-“的日期对象。<br>要把”-“去掉，例如：</p><pre><code>var tempDate=&quot;2017-03-29 09:49:07&quot;.replace(/\-/g,&quot;/&quot;);var newDate=new Date(tempDate);</code></pre><hr><h2 id="xss-跨域攻击前端解决办法"><a href="#xss-跨域攻击前端解决办法" class="headerlink" title="xss 跨域攻击前端解决办法"></a>xss 跨域攻击前端解决办法</h2><pre><code>.function htmlEncode(html) {       var temp = document.createElement (&quot;div&quot;);        (temp.textContent != null) ? (temp.textContent = html) : (temp.innerText = html);        var output = temp.innerHTML;        temp = null;        return output; }</code></pre><p>htmlEncode(&lt;script&gt;alert(222)&lt;/script&gt;)</p><p>原理:在页面创建一个临时dom，把要处理的数据赋值给它。用innerText接收。再return innerHTML;</p><hr><h2 id="判断是否在微信浏览器中"><a href="#判断是否在微信浏览器中" class="headerlink" title="判断是否在微信浏览器中"></a>判断是否在微信浏览器中</h2><pre><code>   function is_weixn(){      var ua = navigator.userAgent.toLowerCase();      if(ua.match(/MicroMessenger/i)==&quot;micromessenger&quot;) {          return true;      } else {          return false;      }  }  </code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;position-为fixed的话，在ios的input被点击后就会失效&quot;&gt;&lt;a href=&quot;#position-为fixed的话，在ios的input被点击后就会失效&quot; class=&quot;headerlink&quot; title=&quot;position 为fixed的话，在i
+      
+    
+    </summary>
+    
+    
+      <category term="xss" scheme="http://esplori.github.io/tags/xss/"/>
+    
+      <category term="兼容" scheme="http://esplori.github.io/tags/%E5%85%BC%E5%AE%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>zepto 的tap事件执行再次的解决办法</title>
+    <link href="http://esplori.github.io/html/253.html"/>
+    <id>http://esplori.github.io/html/253.html</id>
+    <published>2017-09-17T15:21:03.000Z</published>
+    <updated>2017-09-17T15:21:25.635Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="最新版Chrome模拟器下zepto的tap事件执行两次解决办法"><a href="#最新版Chrome模拟器下zepto的tap事件执行两次解决办法" class="headerlink" title="最新版Chrome模拟器下zepto的tap事件执行两次解决办法"></a>最新版Chrome模拟器下zepto的tap事件执行两次解决办法</h1><hr><p>最新版Chrome绑定了三个事件touchend MSPointerUp pointerup，touchend是触摸相关的事件，MSPointerUp 是ie10的触摸事件，pointerup是指针事件。<br>可能是以前的chrome不支持pointerup事件，现在新版本支持了，然后会报错了，把zepto里面pointerup相关的事件都删除了后测试没有问题。<br>zepto目前还没修复，不过issue已经列出来了。<br>解决办法 ：</p><p>1、谷歌浏览器输入 chrome://flags/ 回车</p><p>2、找到 指针活动 那一项</p><p>3、选择 已停用</p><p>然后重启google浏览器就好了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;最新版Chrome模拟器下zepto的tap事件执行两次解决办法&quot;&gt;&lt;a href=&quot;#最新版Chrome模拟器下zepto的tap事件执行两次解决办法&quot; class=&quot;headerlink&quot; title=&quot;最新版Chrome模拟器下zepto的tap事件执行两次
+      
+    
+    </summary>
+    
+    
+      <category term="zepto" scheme="http://esplori.github.io/tags/zepto/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客开通了</title>
+    <link href="http://esplori.github.io/html/210.html"/>
+    <id>http://esplori.github.io/html/210.html</id>
+    <published>2017-09-17T10:05:01.000Z</published>
+    <updated>2017-09-17T15:22:33.034Z</updated>
+    
+    <content type="html"><![CDATA[<p> 倒腾了一下午，终于把hexo博客开通了</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; 倒腾了一下午，终于把hexo博客开通了&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://esplori.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://esplori.github.io/html/209.html"/>
+    <id>http://esplori.github.io/html/209.html</id>
+    <published>2017-09-17T03:49:54.161Z</published>
+    <updated>2017-09-17T03:49:54.165Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>背英文单词重要吗？</title>
+    <link href="http://esplori.github.io/html/168.html"/>
+    <id>http://esplori.github.io/html/168.html</id>
+    <published>2017-05-17T21:28:50.000Z</published>
+    <updated>2017-10-09T14:38:17.341Z</updated>
+    
+    <content type="html"><![CDATA[<p>不背单词，考英语就会是下面这种下场：<br>我们知道賢鏛是在生活中很重要的。比如在鼙蠻和贎鬍里，有彃燊在罅鷄那里蘩墝，之前他们鏈鴊恆闳嘑傡彚槩滼鞷蕻賤鬡艐倏雫寬褲灣。<br>1.鞷 在文中的意思？<br>2.这篇文章的最佳标题？<br>3.作者没有告诉我们什么？<br>4.作者为什么说“恆闳嘑傡彚槩”？</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;不背单词，考英语就会是下面这种下场：&lt;br&gt;我们知道賢鏛是在生活中很重要的。比如在鼙蠻和贎鬍里，有彃燊在罅鷄那里蘩墝，之前他们鏈鴊恆闳嘑傡彚槩滼鞷蕻賤鬡艐倏雫寬褲灣。&lt;br&gt;1.鞷 在文中的意思？&lt;br&gt;2.这篇文章的最佳标题？&lt;br&gt;3.作者没有告诉我们什么？&lt;br&gt;4.
+      
+    
+    </summary>
+    
+      <category term="生活" scheme="http://esplori.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="背英文单词" scheme="http://esplori.github.io/tags/%E8%83%8C%E8%8B%B1%E6%96%87%E5%8D%95%E8%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>汶川地震时的国家动员能力的水平如何?</title>
+    <link href="http://esplori.github.io/html/140.html"/>
+    <id>http://esplori.github.io/html/140.html</id>
+    <published>2017-05-16T21:48:44.000Z</published>
+    <updated>2017-10-09T14:38:17.341Z</updated>
+    
+    <content type="html"><![CDATA[<p>头七那天下午14：28分，国家号召全国人民为遇难同胞默哀三分钟。结果，当时谷歌流量瞬间几乎清零。可以想象这种国家动员能力反馈在国民自身上，大部分是主动自愿的，而不是被动接受=以下为报道原文=谷歌在自己官方博客“谷歌黑板报”上贴出了这张图，记录的是汶川地震一周后，5月19日的流量曲线。这暴跌几乎到0的几分钟，是全国为汶川地震默哀的三分钟。谷歌当时的博文说道：“当我们依照惯例整理和分析谷歌搜索引擎的流量数据时，一条从未见过的曲线出现在我们面前。当意识到发生了什么事情时，我们的眼睛湿润了。”几乎降到0的那个节点说明了当时的一切，这个几乎不可能出现的数据记录着中国为汶川地震默哀的三分钟。</p><p><img src="https://pic3.zhimg.com/v2-5b3b14c4683ba03a672cb3852766843e_b.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;头七那天下午14：28分，国家号召全国人民为遇难同胞默哀三分钟。结果，当时谷歌流量瞬间几乎清零。可以想象这种国家动员能力反馈在国民自身上，大部分是主动自愿的，而不是被动接受=以下为报道原文=谷歌在自己官方博客“谷歌黑板报”上贴出了这张图，记录的是汶川地震一周后，5月19日的
+      
+    
+    </summary>
+    
+      <category term="资讯" scheme="http://esplori.github.io/categories/%E8%B5%84%E8%AE%AF/"/>
+    
+    
+      <category term="国家动员能力" scheme="http://esplori.github.io/tags/%E5%9B%BD%E5%AE%B6%E5%8A%A8%E5%91%98%E8%83%BD%E5%8A%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>修改Ubuntu的aptget源为阿里源的方法</title>
+    <link href="http://esplori.github.io/html/65.html"/>
+    <id>http://esplori.github.io/html/65.html</id>
+    <published>2017-05-02T21:51:36.000Z</published>
+    <updated>2017-10-09T14:38:17.341Z</updated>
+    
+    <content type="html"><![CDATA[<p>1、复制原文件备份<br>sudo cp /etc/apt/source.list /etc/apt/source.list.bak</p><p>2、编辑源列表文件</p><p>sudo vim /etc/apt/source.list</p><p>3、将原来的列表删除，添加如下内容</p><p>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid main restricted universe multiverse<br>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid-security main restricted universe multiverse<br>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid-updates main restricted universe multiverse<br>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid-proposed main restricted universe multiverse<br>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid-backports main restricted universe multiverse<br>deb-src <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid main restricted universe multiverse<br>deb-src <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid-security main restricted universe multiverse<br>deb-src <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid-updates main restricted universe multiverse<br>deb-src <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid-proposed main restricted universe multiverse<br>deb-src <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="external">http://mirrors.aliyun.com/ubuntu/</a> vivid-backports main restricted universe multiverse</p><p>4、运行sudo apt-get update</p><p>5、运行sudo apt-get upgrade</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1、复制原文件备份&lt;br&gt;sudo cp /etc/apt/source.list /etc/apt/source.list.bak&lt;/p&gt;
+&lt;p&gt;2、编辑源列表文件&lt;/p&gt;
+&lt;p&gt;sudo vim /etc/apt/source.list&lt;/p&gt;
+&lt;p&gt;3、将原来的列表删
+      
+    
+    </summary>
+    
+      <category term="网络技术" scheme="http://esplori.github.io/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Ubuntu" scheme="http://esplori.github.io/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery.qrcode.js客户端生成二维码，支持中文并且可以生成LOGO</title>
+    <link href="http://esplori.github.io/html/218.html"/>
+    <id>http://esplori.github.io/html/218.html</id>
+    <published>2017-05-01T21:03:43.000Z</published>
+    <updated>2017-10-09T14:38:17.341Z</updated>
+    
+    <content type="html"><![CDATA[<p>描述： jquery.qrcode.js 是一个能够在客户端生成矩阵二维码QRCode 的jquery插件 ，使用它可以很方便的在页面上生成二维条码。此插件是能够独立使用的，体积也比较                 小，使用gzip压缩后才不到4kb。因为它是直接在客户端生成的条码， 所以不会有图片下载的过程，能够实现快速生成。它是基于一个多语言的类库封装的，也不依赖于其他额外的服务。</p><p>好处：使用jquery-qrcode的好处，不需要在服务器端生成多余的二维码图片，二维码直接通过JavaScript直接在客户端生成，有效减少带宽，以及维护成本。</p><p>首先大家可以看一下jquery.qrcode.js官网，官网上也有例子。但是官网的 jquery.qrcode.js是不支持中文的，废话不多说了，现在我们开始吧。</p><p>官网上的 qrcode.js 文件里没有实现中文的支持和LOGO的添加，现在我们将这个文件修改为jquery.qrcode.js文件了。此外还需要一个对中文进行转码的文件，该文件为  utf.js。然后在 jquery.qrcode.js 文件中调用了 utf.js 文件的 utf16to8(str) 方法对其中文进行了转码。</p><p>下面是我写的一个示例，该示例需要的js文件有 jquery.qrcode.js  和 utf.js  以及 jquery-1.8.0.js 。还有一个 LOGO图片 可点击下载文件。</p><p>调用的html代码如下：</p><pre class="prettyprint linenums">    <script type="text/javascript" src="jquery-1.8.0.js"></script>10 <script type="text/javascript" src="utf.js"></script>11 <script type="text/javascript" src="jquery.qrcode.js"></script>12 <script type="text/javascript">13     $(document).ready(function() {14         $("#qrcodeCanvas").qrcode({15             render : "canvas",    //设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好16             text : "这是修改了官文的js文件，此时生成的二维码支持中文和LOGO",    //扫描二维码后显示的内容,可以直接填一个网址，扫描二维码后自动跳向该链接17             width : "200",               //二维码的宽度18             height : "200",              //二维码的高度19             background : "#ffffff",       //二维码的后景色20             foreground : "#000000",        //二维码的前景色21             src: 'photo.jpg'             //二维码中间的图片22         });23     });24 </script>25 26 27 <body>28     <center>29       ## 该二维码支持中文和LOGO30       <div id="qrcodeCanvas"></div>31     </center>32 </body></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;描述： jquery.qrcode.js 是一个能够在客户端生成矩阵二维码QRCode 的jquery插件 ，使用它可以很方便的在页面上生成二维条码。此插件是能够独立使用的，体积也比较                 小，使用gzip压缩后才不到4kb。因为它是直接在客户端
+      
+    
+    </summary>
+    
+      <category term="web前端" scheme="http://esplori.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="qrcode.js" scheme="http://esplori.github.io/tags/qrcode-js/"/>
+    
+  </entry>
+  
+</feed>

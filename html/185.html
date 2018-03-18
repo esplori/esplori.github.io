@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next gemini" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="身份证号码编码规则," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="小石头官网" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="身份证号码结构 早期‘身份证号码’叫‘社会保障号’，为15位，1999年开始更名为公民身份证号码，即第二代身份证，为18位，且终身不变。 430512  19890813  136  7 公民身份号码是特征组合码，由前十七位数字本体码和最后一位数字校验码组成。排列顺序从左至右依次为六位数字地址码，八位数字出生日期码，三位数字顺序码和一位数字校验码。 地址码： 表示编码对象常住户口所在县(市、旗、区">
+<meta name="keywords" content="身份证号码编码规则">
+<meta property="og:type" content="article">
+<meta property="og:title" content="身份证号码编码规则及其应用">
+<meta property="og:url" content="http://esplori.github.io/html/185.html">
+<meta property="og:site_name" content="小石头官网">
+<meta property="og:description" content="身份证号码结构 早期‘身份证号码’叫‘社会保障号’，为15位，1999年开始更名为公民身份证号码，即第二代身份证，为18位，且终身不变。 430512  19890813  136  7 公民身份号码是特征组合码，由前十七位数字本体码和最后一位数字校验码组成。排列顺序从左至右依次为六位数字地址码，八位数字出生日期码，三位数字顺序码和一位数字校验码。 地址码： 表示编码对象常住户口所在县(市、旗、区">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2016/06/210e4e315fcdcb405aae62ee466dfa4e_r-1.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2016/06/d58583a66659f81e4f8c19f17e3fe059_b.png">
+<meta property="og:image" content="http://image.woshipm.com/wp-files/2016/06/c1e027e8380273be48eeae96d9281e2a_b.png">
+<meta property="og:updated_time" content="2017-10-09T14:38:17.341Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="身份证号码编码规则及其应用">
+<meta name="twitter:description" content="身份证号码结构 早期‘身份证号码’叫‘社会保障号’，为15位，1999年开始更名为公民身份证号码，即第二代身份证，为18位，且终身不变。 430512  19890813  136  7 公民身份号码是特征组合码，由前十七位数字本体码和最后一位数字校验码组成。排列顺序从左至右依次为六位数字地址码，八位数字出生日期码，三位数字顺序码和一位数字校验码。 地址码： 表示编码对象常住户口所在县(市、旗、区">
+<meta name="twitter:image" content="http://image.woshipm.com/wp-files/2016/06/210e4e315fcdcb405aae62ee466dfa4e_r-1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://esplori.github.io/html/185.html"/>
+
+
+
+
+
+  <title>身份证号码编码规则及其应用 | 小石头官网</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?261caeb64c38e6398883c26be50e67eb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小石头官网</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">江湖中的一颗小石头</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://esplori.github.io/html/185.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vscoding">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oxi9a7h8i.bkt.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小石头官网">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">身份证号码编码规则及其应用</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-15T05:06:38+08:00">
+                2016-08-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/生活/" itemprop="url" rel="index">
+                    <span itemprop="name">生活</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="身份证号码结构"><a href="#身份证号码结构" class="headerlink" title="身份证号码结构"></a>身份证号码结构</h2><p><a href="http://image.woshipm.com/wp-files/2016/06/210e4e315fcdcb405aae62ee466dfa4e_r-1.png" target="_blank" rel="external"><img src="http://image.woshipm.com/wp-files/2016/06/210e4e315fcdcb405aae62ee466dfa4e_r-1.png" alt="210e4e315fcdcb405aae62ee466dfa4e_r"></a></p>
+<p>早期‘身份证号码’叫‘社会保障号’，为15位，1999年开始更名为公民身份证号码，即第二代身份证，为18位，且终身不变。</p>
+<p>430512  19890813  136  7</p>
+<p>公民身份号码是特征组合码，由前十七位数字本体码和最后一位数字校验码组成。排列顺序从左至右依次为六位数字地址码，八位数字出生日期码，三位数字顺序码和一位数字校验码。</p>
+<p><strong>地址码</strong>： 表示编码对象常住户口所在县(市、旗、区)的行政区划代码。对于新生儿，该地址码为户口登记地行政区划代码。需要没说明的是，随着行政区划的调整，同一个地方进行户口登记的可能存在地址码不一致的情况。行政区划代码按GB/T2260的规定执行。</p>
+<p><strong>出生日期码</strong>：表示编码对象出生的年、月、日，年、月、日代码之间不用分隔符，格式为YYYYMMDD，如19880328。按GB/T 7408的规定执行。</p>
+<p><strong>顺序码</strong>： 表示在同一地址码所标识的区域范围内，对同年、同月、同日出生的人编定的顺序号，顺序码的奇数分配给男性，偶数分配给女性。</p>
+<p><strong>校验码</strong>： 根据本体码，通过采用ISO 7064:1983,MOD 11-2校验码系统计算出校验码。算法可参考下文。前面有提到数字校验码，我们知道校验码也有X的，实质上为罗马字符X，相当于10.</p>
+<h2 id="二、15位与18位身份证号码差异"><a href="#二、15位与18位身份证号码差异" class="headerlink" title="二、15位与18位身份证号码差异"></a>二、15位与18位身份证号码差异</h2><p>出生日期码：15位身份证号码中出生日期码为4位，其中年份代码仅有2位，如590328，代表1959年生。</p>
+<p>校验码：15位身份证号码中无校验位。</p>
+<h2 id="三、校验码算法"><a href="#三、校验码算法" class="headerlink" title="三、校验码算法"></a>三、校验码算法</h2><p>将本体码各位数字乘以对应加权因子并求和，除以11得到余数，根据余数通过校验码对照表查得校验码。</p>
+<p>加权因子：</p>
+<p><a href="http://image.woshipm.com/wp-files/2016/06/d58583a66659f81e4f8c19f17e3fe059_b.png" target="_blank" rel="external"><img src="http://image.woshipm.com/wp-files/2016/06/d58583a66659f81e4f8c19f17e3fe059_b.png" alt="d58583a66659f81e4f8c19f17e3fe059_b"></a></p>
+<p>校验码：</p>
+<p><a href="http://image.woshipm.com/wp-files/2016/06/c1e027e8380273be48eeae96d9281e2a_b.png" target="_blank" rel="external"><img src="http://image.woshipm.com/wp-files/2016/06/c1e027e8380273be48eeae96d9281e2a_b.png" alt="c1e027e8380273be48eeae96d9281e2a_b"></a></p>
+<p>算法举例：</p>
+<p>本体码为：11010519491231002</p>
+<p>第一步： 各位数与对应加权因子乘积求和1<em>7+1</em>9+0<em>10+1</em>5+<em>*</em>=167</p>
+<p>第二步：对求和进行除11得余数167%11=2</p>
+<p>第三步：根据余数2对照校验码得X</p>
+<p>因此完整身份证号为：11010519491231002X</p>
+<h2 id="四、编码规则的应用"><a href="#四、编码规则的应用" class="headerlink" title="四、编码规则的应用"></a>四、编码规则的应用</h2><p>如上所述，身份证号码是基于一定的规则的，从身份证号码中可以挖掘以下信息：</p>
+<ol>
+<li>身份证长度验证：身份证长度仅存在15位或18位两种长度；</li>
+<li>身份证输入正确性验证：如身份证号为18位，可根据本体码与校验码得关系验证身份证号码输入有误，需要指出的是，验证通过并不代表身份证号码的真实性；</li>
+<li>获得户籍注册地信息：大部分情况下，该地即为出身地或籍贯。对应时需留意行政区划代码的更新迭代；</li>
+<li>出生年月及其正确性；</li>
+<li>性别：顺序码中奇数为男性，偶数位为女性；</li>
+<li>根据18位与15位身份证号码编码规则及校验码算法，将15位身份证号码转换为18位身份证号码；</li>
+<li>小心坑：因校验码为X，实际上有大小写输入不同，请注意兼容或统一。</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/身份证号码编码规则/" rel="tag"># 身份证号码编码规则</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/html/223.html" rel="next" title="marquee 无缝跑马灯">
+                <i class="fa fa-chevron-left"></i> marquee 无缝跑马灯
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/html/48.html" rel="prev" title="为啥睡觉时身体会不由自主地抖一下？">
+                为啥睡觉时身体会不由自主地抖一下？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="http://oxi9a7h8i.bkt.clouddn.com/avatar.png"
+              alt="vscoding" />
+          
+            <p class="site-author-name" itemprop="name">vscoding</p>
+            <p class="site-description motion-element" itemprop="description">To be a better man</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">260</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">286</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://vscoding.com/" title="小石头官网" target="_blank">小石头官网</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.fanleey.com/" title="小石头返利网" target="_blank">小石头返利网</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#身份证号码结构"><span class="nav-number">1.</span> <span class="nav-text">身份证号码结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、15位与18位身份证号码差异"><span class="nav-number">2.</span> <span class="nav-text">二、15位与18位身份证号码差异</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、校验码算法"><span class="nav-number">3.</span> <span class="nav-text">三、校验码算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、编码规则的应用"><span class="nav-number">4.</span> <span class="nav-text">四、编码规则的应用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2017 &mdash; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">esplori</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
