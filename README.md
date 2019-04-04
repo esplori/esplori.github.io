@@ -1,1 +1,1 @@
-http://vscoding.com
+vscoding.com
