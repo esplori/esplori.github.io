@@ -11,7 +11,7 @@
 <meta name="keywords" content="localStorage">
 <meta property="og:type" content="article">
 <meta property="og:title" content="localStorage的一个bug">
-<meta property="og:url" content="http://yoursite.com/2017/12/01/255/index.html">
+<meta property="og:url" content="http://vscoding.com/2017/12/01/255/index.html">
 <meta property="og:site_name" content="vscoding">
 <meta property="og:description" content="昨天我们app在上线的时候发现有一个bug，首页的入口是通过后台开关配置的，开关打开显示入口，关闭则隐藏入口。上线前我们做了测试，用一个用权限的账号先登录，显示有入口，退出再用一个没有权限的账号登录，第一次没有显示入口，但是刷新一个就又显示入口了，定位了一会，发现用localStorage存的开关字段没有生效，没有清除掉。解决办法就是不remomve掉，而是直接置为false就可以了">
 <meta property="og:locale" content="default">
@@ -63,7 +63,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://vscoding.com"></form>
       </div>
     </div>
   </div>
@@ -96,7 +96,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/01/255/" data-id="cju2uy1fd004gkbfy6w9eqkoq" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/12/01/255/" data-id="cju2vcc6y004gsyfyhd3zjw31" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/localStorage/">localStorage</a></li></ul>
