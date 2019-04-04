@@ -5,14 +5,14 @@
   
 
   
-  <title>localStorage的一个bug | Hexo</title>
+  <title>localStorage的一个bug | vscoding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="昨天我们app在上线的时候发现有一个bug，首页的入口是通过后台开关配置的，开关打开显示入口，关闭则隐藏入口。上线前我们做了测试，用一个用权限的账号先登录，显示有入口，退出再用一个没有权限的账号登录，第一次没有显示入口，但是刷新一个就又显示入口了，定位了一会，发现用localStorage存的开关字段没有生效，没有清除掉。解决办法就是不remomve掉，而是直接置为false就可以了">
 <meta name="keywords" content="localStorage">
 <meta property="og:type" content="article">
 <meta property="og:title" content="localStorage的一个bug">
 <meta property="og:url" content="http://yoursite.com/2017/12/01/255/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="vscoding">
 <meta property="og:description" content="昨天我们app在上线的时候发现有一个bug，首页的入口是通过后台开关配置的，开关打开显示入口，关闭则隐藏入口。上线前我们做了测试，用一个用权限的账号先登录，显示有入口，退出再用一个没有权限的账号登录，第一次没有显示入口，但是刷新一个就又显示入口了，定位了一会，发现用localStorage存的开关字段没有生效，没有清除掉。解决办法就是不remomve掉，而是直接置为false就可以了">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2017-12-01T06:16:40.000Z">
@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="localStorage的一个bug">
 <meta name="twitter:description" content="昨天我们app在上线的时候发现有一个bug，首页的入口是通过后台开关配置的，开关打开显示入口，关闭则隐藏入口。上线前我们做了测试，用一个用权限的账号先登录，显示有入口，退出再用一个没有权限的账号登录，第一次没有显示入口，但是刷新一个就又显示入口了，定位了一会，发现用localStorage存的开关字段没有生效，没有清除掉。解决办法就是不remomve掉，而是直接置为false就可以了">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="vscoding" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -39,8 +39,12 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">vscoding</a>
       </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">hello world</a>
+        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -92,7 +96,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/01/255/" data-id="cju2u2r9b004gg6fytp6z7g3c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/12/01/255/" data-id="cju2ucqsi004ghtfyrshw08v6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/localStorage/">localStorage</a></li></ul>
@@ -204,7 +208,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
+      &copy; 2019 vscoding<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
