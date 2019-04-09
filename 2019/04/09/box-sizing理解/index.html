@@ -5,20 +5,20 @@
   
 
   
-  <title>每个人应该怎样高效利用时间？ | 向往的生活</title>
+  <title>对盒模型的理解，以及如何在CSS中告诉浏览器使用不同的盒模型来渲染你的布局 | 向往的生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="李开复 人的一生两个最大的财富是：你的才华和你的时间。才华越来越多，但是时间越来越少，我们的一生可以说是用时间来换取才华。如果一天天过去了，我们的时间少了，而才华没有增加，那就是虚度了时光。所以，我们必须节省时间，有效率地使用时间。如何有效率地利用时间呢？我有下面几个建议：做你真正感兴趣、与自己人生目标一致的事情。我发现我的“生产力”和我的“兴趣”有着直接的关系，而且这种关系还不是单纯的线性关系。">
-<meta name="keywords" content="怎样高效利用时间">
+  <meta name="description" content="说到IE的bug，在IE6以前的版本中，IE对盒模型的解析出现一些问题，跟其它浏览器不同，将border与padding都包含在width之内。而另外一些浏览器则与它相反，是不包括border和padding的。 在我们开发的过程中会发现，有时候，如果对页面中的大区域进行设置时，将border、padding计算到width和height之内，反而更灵活。但W3C的CSS2.1规范却规定了他们并不">
+<meta name="keywords" content="js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="每个人应该怎样高效利用时间？">
-<meta property="og:url" content="http://vscoding.com/2014/02/06/139/index.html">
+<meta property="og:title" content="对盒模型的理解，以及如何在CSS中告诉浏览器使用不同的盒模型来渲染你的布局">
+<meta property="og:url" content="http://vscoding.com/2019/04/09/box-sizing理解/index.html">
 <meta property="og:site_name" content="向往的生活">
-<meta property="og:description" content="李开复 人的一生两个最大的财富是：你的才华和你的时间。才华越来越多，但是时间越来越少，我们的一生可以说是用时间来换取才华。如果一天天过去了，我们的时间少了，而才华没有增加，那就是虚度了时光。所以，我们必须节省时间，有效率地使用时间。如何有效率地利用时间呢？我有下面几个建议：做你真正感兴趣、与自己人生目标一致的事情。我发现我的“生产力”和我的“兴趣”有着直接的关系，而且这种关系还不是单纯的线性关系。">
+<meta property="og:description" content="说到IE的bug，在IE6以前的版本中，IE对盒模型的解析出现一些问题，跟其它浏览器不同，将border与padding都包含在width之内。而另外一些浏览器则与它相反，是不包括border和padding的。 在我们开发的过程中会发现，有时候，如果对页面中的大区域进行设置时，将border、padding计算到width和height之内，反而更灵活。但W3C的CSS2.1规范却规定了他们并不">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-04T15:51:29.539Z">
+<meta property="og:updated_time" content="2019-04-09T13:23:27.363Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="每个人应该怎样高效利用时间？">
-<meta name="twitter:description" content="李开复 人的一生两个最大的财富是：你的才华和你的时间。才华越来越多，但是时间越来越少，我们的一生可以说是用时间来换取才华。如果一天天过去了，我们的时间少了，而才华没有增加，那就是虚度了时光。所以，我们必须节省时间，有效率地使用时间。如何有效率地利用时间呢？我有下面几个建议：做你真正感兴趣、与自己人生目标一致的事情。我发现我的“生产力”和我的“兴趣”有着直接的关系，而且这种关系还不是单纯的线性关系。">
+<meta name="twitter:title" content="对盒模型的理解，以及如何在CSS中告诉浏览器使用不同的盒模型来渲染你的布局">
+<meta name="twitter:description" content="说到IE的bug，在IE6以前的版本中，IE对盒模型的解析出现一些问题，跟其它浏览器不同，将border与padding都包含在width之内。而另外一些浏览器则与它相反，是不包括border和padding的。 在我们开发的过程中会发现，有时候，如果对页面中的大区域进行设置时，将border、padding计算到width和height之内，反而更灵活。但W3C的CSS2.1规范却规定了他们并不">
   
     <link rel="alternate" href="/atom.xml" title="向往的生活" type="application/atom+xml">
   
@@ -69,16 +69,12 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-139" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-box-sizing理解" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/02/06/139/" class="article-date">
-  <time datetime="2014-02-06T14:02:43.000Z" itemprop="datePublished">2014-02-06</time>
+    <a href="/2019/04/09/box-sizing理解/" class="article-date">
+  <time datetime="2019-04-09T13:21:38.000Z" itemprop="datePublished">2019-04-09</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/网络精选/">网络精选</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -87,7 +83,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      每个人应该怎样高效利用时间？
+      对盒模型的理解，以及如何在CSS中告诉浏览器使用不同的盒模型来渲染你的布局
     </h1>
   
 
@@ -95,16 +91,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>李开复</p>
-<p>人的一生两个最大的财富是：你的才华和你的时间。才华越来越多，但是时间越来越少，我们的一生可以说是用时间来换取才华。如果一天天过去了，我们的时间少了，而才华没有增加，那就是虚度了时光。所以，我们必须节省时间，有效率地使用时间。如何有效率地利用时间呢？我有下面几个建议：<br>做你真正感兴趣、与自己人生目标一致的事情。我发现我的“生产力”和我的“兴趣”有着直接的关系，而且这种关系还不是单纯的线性关系。如果面对我没有兴趣的事情，我可能会花掉40％的时间，但只能产生20％的效果；如果遇到我感兴趣的事情，我可能会花100％的时间而得到200％的效果。要在工作上奋发图强，身体健康固然重要，但是真正能改变你的状态的关键是心理而不是生理上的问题。真正地投入到你的工作中，你需要的是一种态度、一种渴望、一种意志。<a id="more"></a><br>知道你的时间是如何花掉的。挑一个星期，每天记录下每30分钟做的事情，然后做一个分类（例如：读书、准备GRE、和朋友聊天、社团活动等）和统计，看看自己什么方面花了太多的时间。凡事想要进步，必须先理解现状。每天结束后，把一整天做的事记下来，每15分钟为一个单位（例如：1:00—1:15等车，1:15—1:45搭车，1:45—2:45与朋友喝茶……）。在一周结束后，分析一下，这周你的时间如何可以更有效率地安排？有没有活动占太大的比例？有没有方法可以增加效率？<br>使用时间碎片和“死时间”。如果你做了上面的时间统计，你一定发现每天有很多时间流失掉了，例如等车、排队、走路、搭车等，可以用来背单字、打电话、温习功课等。现在随时随地都能上网，所以没有任何借口再发呆一次。我前一阵和同事一起出差，他们都很惊讶为什么我和他们整天在一起，但是我的电子邮件都可以及时回答？后来，他们发现，当他们在飞机上和汽车上聊天、读杂志和发呆的时候，我就把电子邮件全回了。重点是，无论自己忙还是不忙，你要把那些可以利用时间碎片做的事先准备好，到你有空闲的时候有计划地拿出来做。<br>要事为先 - 每天一大早挑出最重要的三件事，当天一定要能够做完。在工作和生活中每天都有干不完的事，唯一能够做的就是分清轻重缓急。要理解急事不等于重要的事情。每天除了办又急又重要的事情外，一定要注意不要成为急事的奴隶。有些急但是不重要的事情，你要学会放掉，要能对人说 no! 而且每天这三件事里最好有一件重要但是不急的，这样才能确保你没有成为急事的奴隶。<br>要有纪律。有的年轻人会说自己“没有时间学习”，其实，换个说法就是“学习没有被排上优先级次序”。曾经有一个教学生做时间管理的老师，他上课时带来两个大玻璃缸和一堆大小不一的石头。他做了一个实验，在其中一个玻璃缸中先把小石、砂倒进去，最后大石头就放不下了。而另一个玻璃缸中先放大石头，其它小石和砂却可以慢慢渗入。他以此为比喻说：“时间管理就是要找到自己的优先级，若颠倒顺序，一堆琐事占满了时间，重要的事情就没有空位了。”<br>运用80％—20％原则。人如果利用最高效的时间，只要20％的投入就能产生80％的效率。相对来说，如果使用最低效的时间，80％的时间投入只能产生20%效率。一天头脑最清楚的时候，应该放在最需要专心的工作上。与朋友、家人在一起的时间，相对来说，不需要头脑那么清楚。所以，我们要把握一天中20％的最高效时间（有些人是早晨，也有些人是下午和晚上；除了时间之外，还要看你的心态，血糖的高低，休息是否足够等综合考量），专门用于最困难的科目和最需要思考的学习上。许多同学喜欢熬夜，但是晚睡会伤身，所以还是尽量早睡早起。<br>平衡工作和家庭。我对于家庭的时间分配是用下列的原则：<br>划清界限、言出必行——对家人做出承诺后，而且一定要做到，但是希望其他时间得到谅解。制定较低的期望值以免造成失望。<br>忙中偷闲——不要一投入工作就忽视了家人，有时10分钟的体贴比10小时的陪伴还更受用。<br>闲中偷忙——学会怎么利用时间碎片。例如：家人没起床的时候，你就可以利用这段空闲时间去做你需要的工作。<br>注重有质量的时间（quality time）——时间不是每一分钟都是一样的，有时需要全神贯注，有时坐在旁边上网就可以了。要记得家人平时为你牺牲很多，度假、周末是你补偿的机会。<br>2011-03-13</p>
+        <p>说到IE的bug，在IE6以前的版本中，IE对盒模型的解析出现一些问题，跟其它浏览器不同，将border与padding都包含在width之内。而另外一些浏览器则与它相反，是不包括border和padding的。</p>
+<p>在我们开发的过程中会发现，有时候，如果对页面中的大区域进行设置时，将border、padding计算到width和height之内，反而更灵活。但W3C的CSS2.1规范却规定了他们并不能被包含其中。考虑到这个问题，css3中引入了一个新的属性：box-sizing，它具有“content-box”和”border-box“两个值。</p>
+<p>box-sizing:content-box</p>
+<p>当我们设置box-sizing:content-box;时，浏览器对盒模型的解释遵从我们之前认识到的W3C标准，当它定义width和height时，它的宽度不包括border和padding。</p>
+<p>box-sizing:border-box</p>
+<p>当我们设置box-sizing:border-box;时，浏览器对盒模型的解释与IE6之前的版本相同，当它定义width和height时，border和padding则是被包含在宽高之内的。内容的宽和高可以通过定义的“width”和“height”减去相应方向的“padding”和“border”的宽度得到。内容的宽和高必须保证不能为负，必要时将自动增大该元素border box的尺寸以使其内容的宽或高最小为0。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2014/02/06/139/" data-id="cju9tfg0h00103sfyipivp0fk" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2019/04/09/box-sizing理解/" data-id="cju9tfg33007k3sfyd9rm7php" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/怎样高效利用时间/">怎样高效利用时间</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
 
     </footer>
   </div>
@@ -112,19 +112,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2014/05/11/177/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          警方可以看到我们的qq聊天记录么？
-        
-      </div>
-    </a>
   
-  
-    <a href="/2014/02/05/102/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/04/07/第24天/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">年初总结</div>
+      <div class="article-nav-title">第24天</div>
     </a>
   
 </nav>

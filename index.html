@@ -70,6 +70,50 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-box-sizing理解" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/09/box-sizing理解/" class="article-date">
+  <time datetime="2019-04-09T13:21:38.000Z" itemprop="datePublished">2019-04-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/09/box-sizing理解/">对盒模型的理解，以及如何在CSS中告诉浏览器使用不同的盒模型来渲染你的布局</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>说到IE的bug，在IE6以前的版本中，IE对盒模型的解析出现一些问题，跟其它浏览器不同，将border与padding都包含在width之内。而另外一些浏览器则与它相反，是不包括border和padding的。</p>
+<p>在我们开发的过程中会发现，有时候，如果对页面中的大区域进行设置时，将border、padding计算到width和height之内，反而更灵活。但W3C的CSS2.1规范却规定了他们并不能被包含其中。考虑到这个问题，css3中引入了一个新的属性：box-sizing，它具有“content-box”和”border-box“两个值。</p>
+<p>box-sizing:content-box</p>
+<p>当我们设置box-sizing:content-box;时，浏览器对盒模型的解释遵从我们之前认识到的W3C标准，当它定义width和height时，它的宽度不包括border和padding。</p>
+<p>box-sizing:border-box</p>
+<p>当我们设置box-sizing:border-box;时，浏览器对盒模型的解释与IE6之前的版本相同，当它定义width和height时，border和padding则是被包含在宽高之内的。内容的宽和高可以通过定义的“width”和“height”减去相应方向的“padding”和“border”的宽度得到。内容的宽和高必须保证不能为负，必要时将自动增大该元素border box的尺寸以使其内容的宽或高最小为0。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://vscoding.com/2019/04/09/box-sizing理解/" data-id="cju9tfg33007k3sfyd9rm7php" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-第24天" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/04/07/第24天/" class="article-date">
@@ -104,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2019/04/07/第24天/" data-id="cju6x79mc0001npfy9tl3hd0g" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2019/04/07/第24天/" data-id="cju9tfg3900833sfykr866riz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -146,7 +190,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2019/04/06/整合mybatis/" data-id="cju6wsq36007tn1fy4jub1gjk" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2019/04/06/整合mybatis/" data-id="cju9tfg3800803sfyfr7mhhi5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mybatis/">mybatis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springboot/">springboot</a></li></ul>
@@ -189,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2019/04/05/心慌/" data-id="cju6wsq33007nn1fyg0t8wq4s" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2019/04/05/心慌/" data-id="cju9tfg36007u3sfyexnxhps3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -232,7 +276,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2019/04/05/奔赴丽水/" data-id="cju6wsq34007qn1fyz9siivgi" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2019/04/05/奔赴丽水/" data-id="cju9tfg37007x3sfyekdwtp21" class="article-share-link">Share</a>
       
       
     </footer>
@@ -273,7 +317,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2019/04/05/273/" data-id="cju6wsq2b005fn1fycqnx1f0d" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2019/04/05/273/" data-id="cju9tfg2600593sfyq5r325vy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -323,7 +367,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/09/02/272/" data-id="cju6wsq260054n1fylkjsdm1k" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/09/02/272/" data-id="cju9tfg2500563sfykiu8e1u6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github-pages/">github pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vuepress/">vuepress</a></li></ul>
@@ -386,7 +430,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/09/02/270/" data-id="cju6wsq250050n1fyjchn7nsb" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/09/02/270/" data-id="cju9tfg2400543sfy19417tsx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mpvue/">mpvue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小程序适配iphoneX/">小程序适配iphoneX</a></li></ul>
@@ -442,7 +486,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/09/02/269/" data-id="cju6wsq24004yn1fyf2bqm6oq" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/09/02/269/" data-id="cju9tfg2300523sfy5v9ztie8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mpvue/">mpvue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小程序/">小程序</a></li></ul>
@@ -481,62 +525,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/04/21/267/" data-id="cju6wsq23004wn1fyde43a2qd" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/04/21/267/" data-id="cju9tfg21004y3sfykzbqw1it" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/element-ui/">element ui</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-266" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/04/21/266/" class="article-date">
-  <time datetime="2018-04-21T14:43:13.000Z" itemprop="datePublished">2018-04-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/21/266/">一些笔记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>文本超过宽度显示省略号<br>text-overflow:ellipsis</p>
-</li>
-<li><p>设置body dom元素可编辑<br>document.body.contentEditable = true</p>
-</li>
-<li><p>a链接取消默认行为<br><a href="javascript:void(0)" target="_blank" rel="noopener"></a></p>
-</li>
-<li><p>input 里面的placeholder 文本居中</p>
-<stype><br>    input:-ms-input-placeholder{<br>        text-align:center<br>    }<br>    input:-webkit-input-placeholder{<br>        text-align:center<br>    }<br></stype>
-</li>
-<li><p>Object.assign() 方法和于将所有可枚举属性的值从一个<br>或多个源对象复制到目标对象，它将返回目标对象。</p>
-<pre><code>Object.assign({aa:&apos;123&apos;},{bb:&apos;456&apos;}) //{aa:&apos;123&apos;,bb:&apos;456&apos;}
-</code></pre></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/04/21/266/" data-id="cju6wsq22004un1fyrwdszq9j" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/notes/">notes</a></li></ul>
 
     </footer>
   </div>
@@ -602,6 +594,10 @@
       <ul>
         
           <li>
+            <a href="/2019/04/09/box-sizing理解/">对盒模型的理解，以及如何在CSS中告诉浏览器使用不同的盒模型来渲染你的布局</a>
+          </li>
+        
+          <li>
             <a href="/2019/04/07/第24天/">第24天</a>
           </li>
         
@@ -615,10 +611,6 @@
         
           <li>
             <a href="/2019/04/05/奔赴丽水/">奔赴丽水</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/05/273/">删除无病呻吟的内容</a>
           </li>
         
       </ul>

@@ -70,6 +70,78 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-228" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/18/228/" class="article-date">
+  <time datetime="2017-09-18T14:22:12.000Z" itemprop="datePublished">2017-09-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/18/228/">position 为fixed的话，在ios的input被点击后就会失效</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="position-为fixed的话，在ios的input被点击后就会失效"><a href="#position-为fixed的话，在ios的input被点击后就会失效" class="headerlink" title="position 为fixed的话，在ios的input被点击后就会失效"></a>position 为fixed的话，在ios的input被点击后就会失效</h2><p>网上某个用户的说法：</p>
+<blockquote>
+<p>在使用bootstrap的navbar-fixed-top时，发现在iPhone上的微信里面，当点击input弹出输入法之后，顶部fixed的navbar消失，在输入法没有关闭的情况下，向上滚动，会发现navbar在半空中。<br>Google了一下，发现这个问题在iOS中很常见，Bootstrap也对此进行了说明。</p>
+</blockquote>
+<blockquote>
+<p>Virtual keyboardsAlso, note that if you’re using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn’t update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to position: absolute or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.</p>
+</blockquote>
+<blockquote>
+<p>不过我在最近刚更新的iOS8.3的Safari中，没有发现这个问题。在8.3的Safari中，点击input弹出输入法之后，fixed元素会失效，navbar回到最顶端，没有浮在半空中。猜测是在弹出虚拟键盘之后为了节省页面空间，而对fixed的元素进行了处理，但是在微信中的浏览器上处理出了点问题。<br>目前发现最好的解决方案是在点击input之后，直接把fixed的元素变成absolute的，不需要浏览器自己去做处理。<br>有人说在滚动时用timer实时调整元素位置，我觉得这个很低端。浏览器去处理fixed元素自然有它的道理，确实可以节省屏幕空间。我们其实也没有必要在这个情况下强制显示navbar，这时用户的重点在于输入。当我们input失去焦点之后，输入法关闭，这时我们再显示出navbar。</p>
+</blockquote>
+<p>这种情况在正常的浏览器中，如果元素的position 为fixed的话，在ios的input被点击后就会失效。<br>所以只要改成这样:position: absolute 就可以了</p>
+<hr>
+<h2 id="IOS-Safari浏览器不能正确解释出Javascript中的-new-Date-的带”-“的日期对象"><a href="#IOS-Safari浏览器不能正确解释出Javascript中的-new-Date-的带”-“的日期对象" class="headerlink" title="IOS Safari浏览器不能正确解释出Javascript中的 new Date() 的带”-“的日期对象"></a>IOS Safari浏览器不能正确解释出Javascript中的 new Date() 的带”-“的日期对象</h2><p>在IOSSafari浏览器不能正确解释出Javascript中的 new Date(‘2013-10-21’) 的带”-“的日期对象。<br>要把”-“去掉，例如：</p>
+<pre><code>var tempDate=&quot;2017-03-29 09:49:07&quot;.replace(/\-/g,&quot;/&quot;);
+var newDate=new Date(tempDate);
+</code></pre><hr>
+<h2 id="xss-跨域攻击前端解决办法"><a href="#xss-跨域攻击前端解决办法" class="headerlink" title="xss 跨域攻击前端解决办法"></a>xss 跨域攻击前端解决办法</h2><pre><code>.function htmlEncode(html) {   
+    var temp = document.createElement (&quot;div&quot;);    
+    (temp.textContent != null) ? (temp.textContent = html) : (temp.innerText = html);    
+    var output = temp.innerHTML;    
+    temp = null;    
+    return output; 
+}
+</code></pre><p>htmlEncode(&lt;script&gt;alert(222)&lt;/script&gt;)</p>
+<p>原理:在页面创建一个临时dom，把要处理的数据赋值给它。用innerText接收。再return innerHTML;</p>
+<hr>
+<h2 id="判断是否在微信浏览器中"><a href="#判断是否在微信浏览器中" class="headerlink" title="判断是否在微信浏览器中"></a>判断是否在微信浏览器中</h2><pre><code>   function is_weixn(){  
+    var ua = navigator.userAgent.toLowerCase();  
+    if(ua.match(/MicroMessenger/i)==&quot;micromessenger&quot;) {  
+        return true;  
+    } else {  
+        return false;  
+    }  
+}  
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://vscoding.com/2017/09/18/228/" data-id="cju9tfg1l003q3sfyr3ncjof6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xss/">xss</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/兼容/">兼容</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-253" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/09/17/253/" class="article-date">
@@ -102,7 +174,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/09/17/253/" data-id="cju6wsq1t0046n1fyc3b8kb4m" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/09/17/253/" data-id="cju9tfg1q00443sfyxej4ih6e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zepto/">zepto</a></li></ul>
@@ -145,7 +217,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/05/18/168/" data-id="cju6wsq0w0020n1fyju4u1afs" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/05/18/168/" data-id="cju9tfg0t001v3sfyex2syzdk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/背英文单词/">背英文单词</a></li></ul>
@@ -194,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/05/03/65/" data-id="cju6wsq2u006tn1fy0zv7lx29" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/05/03/65/" data-id="cju9tfg2v006w3sfyy4t12ski" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li></ul>
@@ -270,7 +342,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/05/02/218/" data-id="cju6wsq1k003mn1fyj3wwc6ei" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/05/02/218/" data-id="cju9tfg1g003d3sfyhudffb36" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/qrcode-js/">qrcode.js</a></li></ul>
@@ -313,7 +385,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/04/04/178/" data-id="cju6wsq0z0026n1fycvd0trzs" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/04/04/178/" data-id="cju9tfg1000293sfyyekecw6b" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
@@ -355,7 +427,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/04/03/12/" data-id="cju6wsq01000bn1fyomb7kmxp" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/04/03/12/" data-id="cju9tfg04000f3sfyqyxswkj9" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ajax/">ajax</a></li></ul>
@@ -416,7 +488,7 @@ console.log(w)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/04/02/221/" data-id="cju6wsq1i003jn1fy06w2lqzm" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/04/02/221/" data-id="cju9tfg1h003g3sfyjch10e9u" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
@@ -461,7 +533,7 @@ console.log(w)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/04/01/64/" data-id="cju6wsq2t006rn1fyibs1mt5m" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/04/01/64/" data-id="cju9tfg2u006t3sfy47cti9rl" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios虚拟键盘弹出时错位的bug/">ios虚拟键盘弹出时错位的bug</a></li></ul>
@@ -507,52 +579,10 @@ console.log(w)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/03/27/25/" data-id="cju6wsq1r0043n1fyakd5mjzg" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/03/27/25/" data-id="cju9tfg1p00423sfyzj81mjpw" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/奇葩BUG/">奇葩BUG</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-112" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/11/112/" class="article-date">
-  <time datetime="2017-03-10T21:27:24.000Z" itemprop="datePublished">2017-03-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/web前端/">web前端</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/11/112/">最新版Chrome模拟器下zepto的tap事件执行两次解决办法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <div class="zm-editable-content clearfix">最新版Chrome绑定了三个事件touchend MSPointerUp pointerup，touchend是触摸相关的事件，MSPointerUp 是ie10的触摸事件，pointerup是指针事件。</div><br><div class="zm-editable-content clearfix"><br>可能是以前的chrome不支持pointerup事件，现在新版本支持了，然后会报错了，把zepto里面pointerup相关的事件都删除了后测试没有问题。</div><br><div class="zm-editable-content clearfix"></div><br><div class="zm-editable-content clearfix">zepto目前还没修复，不过issue已经列出来了。</div><br><div class="zm-editable-content clearfix"></div><br><div class="zm-editable-content clearfix">解决办法 ：</div><br><div class="zm-editable-content clearfix"><br><br>1、谷歌浏览器输入 chrome://flags/ 回车<br><br>2、找到 指针活动 那一项<br><br>3、选择 已停用<br><br>然后重启google浏览器就好了。~<br><br></div>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/03/11/112/" data-id="cju6wsq09000ln1fy6op2m232" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zepto/">zepto</a></li></ul>
 
     </footer>
   </div>
@@ -618,6 +648,10 @@ console.log(w)
       <ul>
         
           <li>
+            <a href="/2019/04/09/box-sizing理解/">对盒模型的理解，以及如何在CSS中告诉浏览器使用不同的盒模型来渲染你的布局</a>
+          </li>
+        
+          <li>
             <a href="/2019/04/07/第24天/">第24天</a>
           </li>
         
@@ -631,10 +665,6 @@ console.log(w)
         
           <li>
             <a href="/2019/04/05/奔赴丽水/">奔赴丽水</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/05/273/">删除无病呻吟的内容</a>
           </li>
         
       </ul>
