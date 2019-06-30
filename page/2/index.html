@@ -70,6 +70,62 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-269" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/02/269/" class="article-date">
+  <time datetime="2018-09-02T02:04:34.000Z" itemprop="datePublished">2018-09-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/02/269/">使用mpvue框架开发微信小程序</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>mpvue官网：<a href="http://mpvue.com/mpvue/" target="_blank" rel="noopener">http://mpvue.com/mpvue/</a></p>
+<p>通过 Vue.js 命令行工具 vue-cli，你只需在终端窗口输入几条简单命令，即可快速创建和启动一个带热重载、保存时静态检查、内置代码构建功能的小程序项目：</p>
+<h1 id="全局安装-vue-cli"><a href="#全局安装-vue-cli" class="headerlink" title="全局安装 vue-cli"></a>全局安装 vue-cli</h1><p>$ npm install –global vue-cli</p>
+<h1 id="创建一个基于-mpvue-quickstart-模板的新项目"><a href="#创建一个基于-mpvue-quickstart-模板的新项目" class="headerlink" title="创建一个基于 mpvue-quickstart 模板的新项目"></a>创建一个基于 mpvue-quickstart 模板的新项目</h1><p>$ vue init mpvue/mpvue-quickstart my-project</p>
+<h1 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h1><p>$ cd my-project<br>$ npm install # 启动构建 $ npm run dev<br>接下来，你只需要启动微信开发者工具，引入dist目录即可预览到你的第一个 mpvue 小程序。</p>
+<p>mpvue使用vue的语法,组件方面既可以使用官网小程序的组件，也可以自己写vue组件。</p>
+<p>第一次使用该框架写小程序的时候需要注意：</p>
+<p>1.可以在onload里面对页面进行初始化：</p>
+<p>onLoad(res) {<br>   // res.id 是上个页面在链接在链接后添加的参数，比如 /order-detail/main?id=234<br>    wx.setNavigationBarTitle({<br>      title: “产品详情” // 设置当前页面标题<br>    })<br>  }<br>};<br>2.页面跳转有两种方式，可以使用navigateTo，可以直接在a链接里面写直跳转的地址</p>
+<p>let url = “./order-detail/main”;<br>wx.navigateTo({ url });<br><a href="/order-detail/main"></a></p>
+<ol start="3">
+<li>有时候改变数组或者对象的值后视图不更新，请使用vue中的this.$set() 方法</li>
+</ol>
+<p>4.使用官方的选择地区组件的时候可能有些不一样：</p>
+<picker mode="region" @change="bindRegionChange($event)" :value="area" :custom-item="customItem"><br>            <view class="picker"><br>              所在地区：NaN<br>            </view><br></picker>
+
+<p>methods里面的方法：</p>
+<p>bindRegionChange(e) {<br>      this.area = e.target.value<br>    }</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://vscoding.com/2018/09/02/269/" data-id="cjxib10ng004s3rfynn02m1co" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mpvue/">mpvue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/小程序/">小程序</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-267" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/04/21/267/" class="article-date">
@@ -97,7 +153,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/04/21/267/" data-id="cjwwtqkbz004qjmfye7kxkfnx" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/04/21/267/" data-id="cjxib10nf004r3rfylshox5pp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/element-ui/">element ui</a></li></ul>
@@ -149,7 +205,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/04/21/266/" data-id="cjwwtqkby004pjmfylxkgopup" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/04/21/266/" data-id="cjxib10ne004o3rfyknxr617f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/notes/">notes</a></li></ul>
@@ -202,7 +258,7 @@ $ npm run dev
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/03/29/265/" data-id="cjwwtqkbr004fjmfyacganj4g" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/03/29/265/" data-id="cjxib10nc004k3rfy6x70bc7m" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/">webpack</a></li></ul>
@@ -251,7 +307,7 @@ fatal: could not read Username for &apos;GitHub · Where software is built&apos;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/03/19/264/" data-id="cjwwtqkbt004ijmfyw1yck60z" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/03/19/264/" data-id="cjxib10nb004h3rfyy855rikk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -293,7 +349,7 @@ fatal: could not read Username for &apos;GitHub · Where software is built&apos;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/02/25/262/" data-id="cjwwtqkbv004kjmfyegkxfv8m" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/02/25/262/" data-id="cjxib10na004f3rfyezr8z66y" class="article-share-link">Share</a>
       
       
     </footer>
@@ -336,7 +392,7 @@ fatal: could not read Username for &apos;GitHub · Where software is built&apos;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/02/03/261/" data-id="cjwwtqkbq004cjmfy09qhitz5" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/02/03/261/" data-id="cjxib10nd004m3rfyk7hylh2g" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/抢票软件/">抢票软件</a></li></ul>
@@ -375,7 +431,7 @@ fatal: could not read Username for &apos;GitHub · Where software is built&apos;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2018/02/03/260/" data-id="cjwwtqkbn0047jmfyf72gv26j" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2018/02/03/260/" data-id="cjxib10n8004c3rfya35x001n" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/window10/">window10</a></li></ul>
@@ -494,7 +550,7 @@ $ nano filename  # Mac OS 下的文件编辑器，也可以使用vim, emacs, 记
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/12/07/257/" data-id="cjwwtqkbm0044jmfytq5hjdwo" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/12/07/257/" data-id="cjxib10n700493rfy3tmdvcv6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm模块/">npm模块</a></li></ul>
@@ -533,50 +589,10 @@ $ nano filename  # Mac OS 下的文件编辑器，也可以使用vim, emacs, 记
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/12/01/255/" data-id="cjwwtqkbo0049jmfyqp9ko9dp" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2017/12/01/255/" data-id="cjxib10n300433rfyda8kfsat" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/localStorage/">localStorage</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-254" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/23/254/" class="article-date">
-  <time datetime="2017-10-23T13:30:38.000Z" itemprop="datePublished">2017-10-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/23/254/">为什么说农业税、屠宰税是曾经的民生之痛</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1999年8月，江西丰城某乡一位周姓农民，因为不满当地政府加诸于农民头上的过重负担，自费收集整理了当时中央和江西省委的关于减轻农民负担的文件并广为散发，鼓动农民抵制不合法不合理的上缴，被乡政府带走送到“学习班”，两天后非正常死亡。家属50多人到乡政府“闹事”，被乡政府以蛮横的态度驱散。乡政府恶劣的行径激怒了淳朴的农民，总共四个乡镇数万农民自发带着农具冲向该乡，包围并捣毁了乡政府。乡长和一名乡干部被从二楼扔下，愤怒的农民当场在乡政府刨了一个大坑将此二人活埋。乡派出所长和一名民警被当场打死，派出所长的尸体被吊在树上示众。乡党委书记乘乡中学一教师的摩托侥幸逃脱跑到县城。</p>
-<p>当夜，江西省调派大批警力进驻丰城，事件逐步平息。所谓的为首人员逃入山里。31日，国务院召开紧急电视电话会议，乡镇一级的两个正职全部参加，这是非常罕见的。会上通报了多起因农民负担死人而引发的重大群体事件。时任总理和分管农业的副总理作重要讲话。会议强调了全国立即停止以强制手段征收上缴。<br>2000年，江西省试点取消农业税。2003年，全国取消农业税。<br>经过90年代的人如果在农村呆过，是非常清楚那时候农民生活是怎样的悲苦，负担是怎样的不合理，而上级的死命令又是如何把农村基层干部变成心狠手辣的暴徒。当时农村基层干部为了完成任务，扒房牵牛、搬谷拉猪是无所不为。有一个在基层农村干部中广为流传的顺口溜是“上吊不解绳，喝药不接瓶，投河不拉人。要是敢打人，就抓你的人。”在丰城事件以前，农民的反抗多数是孤立的个别的。老实的农民选择自杀的居多，也有个别冲动的会选择杀人，但是从来没有像丰城事件那样大规模的暴力行动。<br>难道上面的那些官僚们不清楚农村基层的情况吗？难道时任总理没有看到李昌平同志的信吗？有无数的底层民众写信上访了，有很多基层干部看到危机向上反映过。但是，都没有改变那些“铁心肠”！<br>最终，只有丰城的农民兄弟们的铁拳才软化了官僚们的“铁心肠”，终于换来了取消农业税这一善政！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://vscoding.com/2017/10/23/254/" data-id="cjwwtqkbk0041jmfyb2ozh673" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/农业税/">农业税</a></li></ul>
 
     </footer>
   </div>
@@ -642,6 +658,10 @@ $ nano filename  # Mac OS 下的文件编辑器，也可以使用vim, emacs, 记
       <ul>
         
           <li>
+            <a href="/2019/06/30/6月/">6月</a>
+          </li>
+        
+          <li>
             <a href="/2019/06/15/周末/">周末</a>
           </li>
         
@@ -655,10 +675,6 @@ $ nano filename  # Mac OS 下的文件编辑器，也可以使用vim, emacs, 记
         
           <li>
             <a href="/2019/04/06/整合mybatis/">springboot整合mybatis</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/05/心慌/">心慌</a>
           </li>
         
       </ul>

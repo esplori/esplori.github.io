@@ -70,6 +70,84 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-212" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/28/212/" class="article-date">
+  <time datetime="2016-09-27T21:55:31.000Z" itemprop="datePublished">2016-09-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/笔记/">笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/28/212/">HTTP中GET与POST的区别</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>99%的人理解错HTTP中GET与POST的区别<br>IT之家 1天前<br>GET和POST是HTTP请求的两种基本方法，要说它们的区别，接触过WEB开发的人都能说出一二。</p>
+<p>最直观的区别就是GET把参数包含在URL中，POST通过request body传递参数。</p>
+<p>你可能自己写过无数个GET和POST请求，或者已经看过很多权威网站总结出的他们的区别，你非常清楚知道什么时候该用什么。</p>
+<p>当你在面试中被问到这个问题，你的内心充满了自信和喜悦。<br>你轻轻松松的给出了一个”标准答案”：</p>
+<p>GET在浏览器回退时是无害的，而POST会再次提交请求。</p>
+<p>GET产生的URL地址可以被Bookmark，而POST不可以。</p>
+<p>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</p>
+<p>GET请求只能进行url编码，而POST支持多种编码方式。</p>
+<p>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</p>
+<p>GET请求在URL中传送的参数是有长度限制的，而POST么有。</p>
+<p>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</p>
+<p>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</p>
+<p>GET参数通过URL传递，POST放在Request body中。</p>
+<p>（本标准答案参考自w3schools）</p>
+<p>“很遗憾，这不是我们要的回答！”<br>请告诉我真相。。。</p>
+<p>如果我告诉你GET和POST本质上没有区别你信吗？</p>
+<p>让我们扒下GET和POST的外衣，坦诚相见吧！</p>
+<p>GET和POST是什么？HTTP协议中的两种发送请求的方法。</p>
+<p>HTTP是什么？HTTP是基于TCP/IP的关于数据如何在万维网中如何通信的协议。</p>
+<p>HTTP的底层是TCP/IP。所以GET和POST的底层也是TCP/IP，也就是说，GET/POST都是TCP链接。GET和POST能做的事情是一样一样的。你要给GET加上request body，给POST带上url参数，技术上是完全行的通的。</p>
+<p>那么，”标准答案”里的那些区别是怎么回事？<br>在我大万维网世界中，TCP就像汽车，我们用TCP来运输数据，它很可靠，从来不会发生丢件少件的现象。但是如果路上跑的全是看起来一模一样的汽车，那这个世界看起来是一团混乱，送急件的汽车可能被前面满载货物的汽车拦堵在路上，整个交通系统一定会瘫痪。为了避免这种情况发生，交通规则HTTP诞生了。HTTP给汽车运输设定了好几个服务类别，有GET, POST, PUT, DELETE等等，HTTP规定，当执行GET请求的时候，要给汽车贴上GET的标签（设置method为GET），而且要求把传送的数据放在车顶上（url中）以方便记录。如果是POST请求，就要在车上贴上POST的标签，并把货物放在车厢里。当然，你也可以在GET的时候往车厢内偷偷藏点货物，但是这是很不光彩；也可以在POST的时候在车顶上也放一些数据，让人觉得傻乎乎的。HTTP只是个行为准则，而TCP才是GET和POST怎么实现的基本。</p>
+<p>但是，我们只看到HTTP对GET和POST参数的传送渠道（url还是requrest body）提出了要求。”标准答案”里关于参数大小的限制又是从哪来的呢？<br>在我大万维网世界中，还有另一个重要的角色：运输公司。不同的浏览器（发起http请求）和服务器（接受http请求）就是不同的运输公司。虽然理论上，你可以在车顶上无限的堆货物（url中无限加参数）。但是运输公司可不傻，装货和卸货也是有很大成本的，他们会限制单次运输量来控制风险，数据量太大对浏览器和服务器都是很大负担。业界不成文的规定是，（大多数）浏览器通常都会限制url长度在2K个字节，而（大多数）服务器最多处理64K大小的url。超过的部分，恕不处理。如果你用GET服务，在request body偷偷藏了数据，不同服务器的处理方式也是不同的，有些服务器会帮你卸货，读出数据，有些服务器直接忽略，所以，虽然GET可以带request body，也不能保证一定能被接收到哦。</p>
+<p>好了，现在你知道，GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。</p>
+<p>你以为本文就这么结束了？<br>我们的大BOSS还等着出场呢。。。</p>
+<p>这位BOSS有多神秘？当你试图在网上找”GET和POST的区别”的时候，那些你会看到的搜索结果里，从没有提到他。他究竟是什么呢。。。</p>
+<p>GET和POST还有一个重大区别，简单的说：</p>
+<p>GET产生一个TCP数据包；POST产生两个TCP数据包。</p>
+<p>长的说：</p>
+<p>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；</p>
+<p>而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</p>
+<p>也就是说，GET只需要汽车跑一趟就把货送到了，而POST得跑两趟，第一趟，先去和服务器打个招呼”嗨，我等下要送一批货来，你们打开门迎接我”，然后再回头把货送过去。</p>
+<p>因为POST需要两步，时间上消耗的要多一点，看起来GET比POST更有效。因此Yahoo团队有推荐用GET替换POST来优化网站性能。但这是一个坑！跳入需谨慎。为什么？</p>
+<p>1. GET与POST都有自己的语义，不能随便混用。</p>
+<p>2.据研究，在网络环境好的情况下，发一次包的时间和发两次包的时间差别基本可以无视。而在网络环境差的情况下，两次包的TCP在验证数据包完整性上，有非常大的优点。</p>
+<p>3.并不是所有浏览器都会在POST中发送两次包，Firefox就只发送一次。</p>
+<p>现在，当面试官再问你”GET与POST的区别”的时候，你的内心是不是这样的？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://vscoding.com/2016/09/28/212/" data-id="cjxib10mr00393rfyqh901n78" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/get和post的区别/">get和post的区别</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-48" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/08/16/48/" class="article-date">
@@ -106,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2016/08/16/48/" data-id="cjwwtqkcp005sjmfy43j1mn9f" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2016/08/16/48/" data-id="cjxib10o000613rfyw6pdnan1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/睡觉时身体会抖/">睡觉时身体会抖</a></li></ul>
@@ -179,7 +257,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2016/08/15/185/" data-id="cjwwtqkaw002fjmfy6pb4z6nt" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2016/08/15/185/" data-id="cjxib10me002e3rfyx1v8zy9g" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/身份证号码编码规则/">身份证号码编码规则</a></li></ul>
@@ -228,7 +306,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2016/08/06/143/" data-id="cjwwtqka70013jmfy8sphvow9" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2016/08/06/143/" data-id="cjxib10lt00163rfyz3a4kzdf" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/《雨中独行》/">《雨中独行》</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/洛夫/">洛夫</a></li></ul>
@@ -271,7 +349,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2016/04/07/9/" data-id="cjwwtqkdb0075jmfy5chj5b8t" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2016/04/07/9/" data-id="cjxib10oe007b3rfy35v85dua" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/丢舞蹈鞋的小姑娘/">丢舞蹈鞋的小姑娘</a></li></ul>
@@ -317,7 +395,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2016/03/30/45/" data-id="cjwwtqkcq005ujmfy0fx7kycz" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2016/03/30/45/" data-id="cjxib10nz005v3rfym2w7jaai" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/潜水反射/">潜水反射</a></li></ul>
@@ -361,7 +439,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2016/03/29/107/" data-id="cjwwtqk970004jmfy2l99q4jj" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2016/03/29/107/" data-id="cjxib10l400053rfyb0g9m5cs" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/德国7岁儿童认知世界的70条清单/">德国7岁儿童认知世界的70条清单</a></li></ul>
@@ -406,7 +484,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2016/02/27/186/" data-id="cjwwtqkaz002ljmfy1ptsqu99" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2016/02/27/186/" data-id="cjxib10mh002j3rfyfz1yo0cm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/远行/">远行</a></li></ul>
@@ -452,7 +530,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2016/02/23/235/" data-id="cjwwtqkbe003mjmfyib641e43" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2016/02/23/235/" data-id="cjxib10mz003u3rfyiooj0wz8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Win-10如何自动登陆？/">Win 10如何自动登陆？</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/netplwiz/">netplwiz</a></li></ul>
@@ -495,79 +573,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://vscoding.com/2015/12/31/118/" data-id="cjwwtqkek00bfjmfy414rcnwi" class="article-share-link">Share</a>
+      <a data-url="http://vscoding.com/2015/12/31/118/" data-id="cjxib10pc00bj3rfyt81esl52" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/有什么知识你知道后你的世界马上就不一样了？/">有什么知识你知道后你的世界马上就不一样了？</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-23" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/12/23/23/" class="article-date">
-  <time datetime="2015-12-22T22:15:06.000Z" itemprop="datePublished">2015-12-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/资讯/">资讯</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/23/23/">【深度揭秘】揭开刷单诈骗的真面目</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近，很多小伙伴都反映说看到网上有很多招聘“兼职刷单员”的信息。按照这些招聘广告上的说法，每刷一单就能拿到至少20元的报酬。小安掐指一算，如果每天闲来无事动动手指刷个20单，那么月入过万完全就是轻轻松松的一件事啊。天底下果真有此等操作简单、回报丰厚的工作?<br>为了一探究竟，小安深入虎穴，调查摸底，发现如今网络上绝大部分的刷单兼职都是骗局！且听小安为你揭开刷单诈骗的大坑。</p>
-<p>刷单是幌子</p>
-<p>骗钱才是真正目的</p>
-<p>请大家先来看一个真实案例：</p>
-<p>大学生小徐在某招聘网站上看到“刷单返利”的信息后，主动联系了招聘者。对方给小徐发来一个购物链接，承诺付款后会返还本金和佣金。小徐试着操作后，果然收到了报酬。尝到甜头后，小徐继续用生活费接了多个刷单任务，结果对方却没有继续返还本金和佣金，而是用各种理由劝小徐继续刷单。在垫付了4万元却仍没收到承诺的报酬时，小徐才惊觉被骗。</p>
-<p>&nbsp;</p>
-<p>没错，这就是典型的“刷单诈骗”。现在有些诈骗分子会伪装成中介或代理公司，打着刷信誉、刷销量的旗号在招聘兼职“刷客”。他们承诺，应聘者只要根据指示拍下指定的商品，付款后截图发过去，他们就会把本金和佣金退还回来。然而，在这里面刷单只是幌子，骗钱才是真正目的，目前已有不少人上当受骗。而这类骗局大体上可以分为以下两种。</p>
-<p>骗局类型一</p>
-<p>循环反复，变本加厉</p>
-<p>这类型的刷单骗局最为常见。诈骗分子首先会给应聘者下发一两个比较小额的刷单任务，有时还会“按照约定”返还本金和佣金，为的就是“放长线钓大鱼”，充分赢得应聘者的信任。随后，坏人会逐渐加大刷单任务的数量和金额，同时利用“必须刷满3单以上才能结算”或者“卡单”等理由，来诱骗应聘者继续投入本金。如此手法，周而复始，直至应聘者生疑不再接单。</p>
-<p>骗局类型二</p>
-<p>病毒钓鱼，盗刷钱财</p>
-<p>在这类型的骗局中，诈骗分子首先会要求应聘者提供银行卡余额截图，以便摸透应聘者的经济实力。那些余额较多的应聘者会被要求安装一个用于工作的软件，这个软件表面上是“刷单软件”，实际上是带有病毒的程序。待用户中毒后，诈骗分子再通过钓鱼的方式截获银行卡号、手机号、支付密码等信息，将应聘者的卡内钱财盗刷而走。</p>
-<p>为何骗子</p>
-<p>能够屡屡得手？</p>
-<p>这种看起来并不高明的骗术为何会有人上当受骗？除了骗子承诺的“高回报”容易让人鬼迷心窍外，诈骗团伙的“专业化”和“团伙化”也是人们受骗的原因之一。</p>
-<p>1</p>
-<p>营造权威假象</p>
-<p>为博取应聘者的信任，骗子通常会在线上给应聘者展示各种各样的营业执照、企业注册文件、后台系统页面等等，来营造自己是诚信经营的假象。实际上，这些所谓的证件通过简单的PS即能伪造出来。而企业名字、公司地址、工商注册号在网上一搜一大把，诈骗分子可随意窃用。</p>
-<p>诈骗角色，轮番上阵</p>
-<p>刷单诈骗逐渐趋向团伙化。其中，群发团伙负责通过论坛、招聘网站等渠道发布极具诱惑性的招聘消息；代聊团伙负责为前来应聘的人介绍兼职内容，并引导其联系诈骗实施团伙；随后，“客服”、“业务经理”等等角色轮番上阵，一步一步诱骗应聘者陷入骗局。</p>
-<p>若不慎受骗</p>
-<p>我们该怎么办？</p>
-<p>报警！如果不慎上当受骗，请小伙伴们保存好相关截图记录，第一时间报案，警察叔叔可把骗子的账户冻结，帮助追回损失钱财。不过，这都是事后能够采取的补救措施，最重要的还是提高警觉，避免上当。请牢记小安一句话：天上永远不会掉馅饼，面对脱离现实的高回报工作要谨慎看待。</p>
-<p>最后的话</p>
-<p>无论当中是否存在欺诈，小安对于兼职刷客这种工作是不赞成的。因为刷单兼职本身就是对其他消费者的一种欺骗。希望大家都能够走正当途径，好好工作，天天向上！</p>
-<p>来源:微信qq安全中心</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://vscoding.com/2015/12/23/23/" data-id="cjwwtqkbf003pjmfyfk0bwwmo" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/深度揭秘刷单/">深度揭秘刷单</a></li></ul>
 
     </footer>
   </div>
@@ -633,6 +642,10 @@
       <ul>
         
           <li>
+            <a href="/2019/06/30/6月/">6月</a>
+          </li>
+        
+          <li>
             <a href="/2019/06/15/周末/">周末</a>
           </li>
         
@@ -646,10 +659,6 @@
         
           <li>
             <a href="/2019/04/06/整合mybatis/">springboot整合mybatis</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/05/心慌/">心慌</a>
           </li>
         
       </ul>
