@@ -1,0 +1,4 @@
+.hero img,.theme-default-content img{
+  border-radius: 5px;
+  filter: drop-shadow(2px 4px 6px black);
+}
