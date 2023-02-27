@@ -22,6 +22,10 @@ export default defineUserConfig({
         text: '三岁生日',
         link: '/post/birthday',
       },
+      {
+        text: '在公园玩',
+        link: '/post/toPark',
+      },
     ]
   }),
 })
