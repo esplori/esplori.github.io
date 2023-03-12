@@ -26,6 +26,10 @@ export default defineUserConfig({
         text: '在公园玩',
         link: '/post/toPark',
       },
+      {
+        text: '又来动物园了',
+        link: '/post/zooAgain',
+      },
     ]
   }),
 })
