@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-3c477006","path":"/post/birthday.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"三岁生日","slug":"三岁生日","link":"#三岁生日","children":[]}],"git":{"updatedTime":1677299018000,"contributors":[{"name":"2EN","email":"2381773226@QQ.COM","commits":1}]},"filePathRelative":"post/birthday.md"}');export{t as data};
