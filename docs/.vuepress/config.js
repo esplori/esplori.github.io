@@ -30,6 +30,10 @@ export default defineUserConfig({
         text: '又来动物园了',
         link: '/post/zooAgain',
       },
+      {
+        text: '快乐五一',
+        link: '/post/2023wuyi',
+      },
     ]
   }),
 })
