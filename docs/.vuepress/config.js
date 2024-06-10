@@ -34,6 +34,10 @@ export default defineUserConfig({
         text: '快乐五一',
         link: '/post/2023wuyi',
       },
+      {
+        text: '转眼四岁了',
+        link: '/post/4sui',
+      },
     ]
   }),
 })
