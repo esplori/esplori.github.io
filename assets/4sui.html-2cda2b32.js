@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-351678a0","path":"/post/4sui.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"转眼四岁了","slug":"转眼四岁了","link":"#转眼四岁了","children":[]}],"git":{"updatedTime":1717997210000,"contributors":[{"name":"wilkwo","email":"2381773226@qq.com","commits":1}]},"filePathRelative":"post/4sui.md"}');export{t as data};

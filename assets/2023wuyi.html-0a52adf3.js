@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-04d706d4","path":"/post/2023wuyi.html","title":"","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"快乐五一","slug":"快乐五一","link":"#快乐五一","children":[]}],"git":{"updatedTime":1683212554000,"contributors":[{"name":"wilkwo","email":"2381773226@qq.com","commits":1}]},"filePathRelative":"post/2023wuyi.md"}');export{t as data};
